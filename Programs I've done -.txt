@@ -1,0 +1,20 @@
+Programs I've done - 
+
+1 - Reverse a Number 
+2 - Palindrome Number
+3 - sum of digits
+4 - Prime No. program
+5 - All Prime NNumbers b/a a & b
+
+Array Programs - 
+1 - Taking Input in array. Sum, Mul, & Avg of an aray
+2 - Find Min, Max & Any particular element in array
+3 - Find element at any indexing, 1st index element, last index element
+4 - Find Frequqency of any element in Array
+5 - Reverse & Sorting of an array
+6 - Max & Min using Sorting, K-max & K-Min using Sorting
+7 - Targeted Element. Print yes if there is a  pair in the array that sum up to target. Array ke kisi element ya kinhi bhi elements ka sum target ke brabr he to yes kre
+8 - For given 2 arrays, find Union & Intersection
+9 - Find majority element if any. 
+10 - Array Rotation - Left, Right, K-times
+11 - Subarray : - If target found using subarray sum then put yes otherwise leave it with no. 
