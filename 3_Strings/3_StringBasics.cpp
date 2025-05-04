@@ -16,6 +16,8 @@ for (int i = 0; i < 7; i++)
 // Character array or string can print all elements at a time no need to print one by one as int array
 cout<<"i'm in Microsoft "<<endl;
 cout<<arr[7];
+
+
 cout<<" 51LPA Package"<<endl;
 // i'm in Microsoft Ç 51LPA Package ; -  b/w both the strings, here ia a null character
 // It is basiocally '\0'
