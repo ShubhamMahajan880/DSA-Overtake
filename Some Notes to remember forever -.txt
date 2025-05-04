@@ -6,3 +6,8 @@ Some Notes to remember forever -
 4 - return -1 basically indicates that element not found
 5 - Pura program khatm krna ho return 0. Looping ya conditional statement end krna ho - break
 6 - #include<bits/stdc++.h> - is the standard universal library file for every inbuilt library. On using it no need to use any other library. But it increase the compilation time around by 1.1 second
+7 - For Pushing the all tracked changes from GitHub Repo to VS Code. in url just use 1s after github and before .com
+8 - remember some of the ASCII Values - 	A-Z :- 65-90, a-z :- 97-122, 0-9 :- 48-57
+9 - in string for get the int from ASCII Value - substract '0' OR 48
+9.1 - //📌 Logic - For making first letter capital of given small case string , simple substract the no. 32 which is ASCII Value difference of a-A : 97-65 = 32. and applicable for all the alphabets
+9.2 - From Capital to Small - Add 32. 

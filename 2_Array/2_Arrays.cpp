@@ -141,6 +141,35 @@ int main()
     // }
     // cout << "max element among this is - " << maxelmnt << endl;// - 2
 
+// Uaing Min Funciton -
+
+    // int size;
+    // cout<<"Enter the size of your array - "<<endl;
+    // cin>>size;
+
+    // int arr[size];
+    // cout<<"Now enter the array elements - "<<endl;
+    // for (int i = 0; i < size; i++)
+    // {
+    //     cin>>arr[i];
+    // }
+
+    // int minelement = arr[0];
+    // for (int i = 0; i < size; i++)
+    // {
+    //     minelement = min(minelement, arr[i]);
+    // }
+    
+    // cout<<"Soo, the maximum element which we have is - "<<minelement<<endl;
+
+/*
+Enter the size of your array - 
+5
+Now enter the array elements - 
+45 89 12 23 654
+Soo, the maximum element which we have is - 12
+*/    
+
 // ____________ ____________ ____________ ____________ ____________
 
     // 2) - Max. Element from array -
@@ -167,6 +196,36 @@ int main()
     // cout << "Maximum element is - " << maxelemnt << endl;// - 89
 
     // These two quns were about aRRAY traverse or array iterate
+
+// Uaing Max Funciton -
+
+    // int size;
+    // cout<<"Enter the size of your array - "<<endl;
+    // cin>>size;
+
+    // int arr[size];
+    // cout<<"Now enter the array elements - "<<endl;
+    // for (int i = 0; i < size; i++)
+    // {
+    //     cin>>arr[i];
+    // }
+
+    // int maxelement = arr[0];
+    // for (int i = 0; i < size; i++)
+    // {
+    //     maxelement = max(maxelement, arr[i]);
+    // }
+    
+    // cout<<"Soo, the maximum element which we have is - "<<maxelement<<endl;
+
+/*
+Enter the size of your array - 
+5
+Now enter the array elements - 
+45 89 12 23 65
+Soo, the maximum element which we have is - 89
+*/
+
 // ____________ ____________ ____________ ____________ ____________
 
     // 3) FInd any element present in the array or not 

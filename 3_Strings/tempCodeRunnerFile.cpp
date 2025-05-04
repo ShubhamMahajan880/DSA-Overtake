@@ -1,2 +1,3 @@
-sort(s.begin(), s.end());
-    // cout<<s<<endl;//BMacefgilnoorrstuu
+string f;
+//  cout<<"which characte you want toi target"<<endl;
+//  cin>>f

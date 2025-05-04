@@ -1,47 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
-    
+
 int main()
 {
 
-    string s1,s2;
-    cout << "What's in your mind" << endl;//Microsoft Hyderabad
-    cout<<"Enter the first string   - "<<" ";
-    getline(cin, s1);
-    cout<<"Now, Enter the Second string   - "<<" ";
-    getline(cin, s2);
+    string s;
+    cout << "Buddy, what are you thinking about " << endl;
+    getline(cin, s);
 
-    sort(s1.begin(), s1.end());
-    sort(s2.begin(), s2.end());
-
-    cout<<"After sort string 1 is "<<s1<<" and string 2 is "<<s2<<endl; 
-    if (s1==s2)
+    string vwls, cnsnnts, NoALphaChar;
+    for (int i = 0; i < s.size(); i++)
     {
-        cout<<"So clearly, strings are Anagram";
+        if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || s[i]==' ')
+        {
+            if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' ||
+                s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U')
+            {
+                vwls += s[i];
+            }
+            else
+            {
+                cnsnnts += s[i];
+            }
+        }
+        else
+        {
+            NoALphaChar+=s[i];
+            
+        }
     }
-    else
-    {
-        cout<<"we can see, strings are Not an Anagram";
-    }
-
     
+    cout << "So, all voweks of givenstring is - " << vwls << endl;
+    cout << "So, all consonants of givenstring is - " << cnsnnts << endl;
+    cout << "It's not an alphabetical character: " << NoALphaChar << endl;
+
 /*
-What's in your mind
-Enter the first string   -  shruti
-Now, Enter the Second string   -  rutish
-After sort string 1 is hirstu and string 2 is hirstu
-So clearly, strings are Anagram
-
-What's in your mind
-Enter the first string   -  Madhuri
-Now, Enter the Second string   -  ridhima
-After sort string 1 is Madhiru and string 2 is adhiimr
-we can see, strings are Not an Anagram
-
-What's in your mind
-Enter the first string   -  Muskan
-Now, Enter the Second string   -  upmuskan
-After sort string 1 is Maknsu and string 2 is akmnpsuu
-we can see, strings are Not an Anagram
-*/
+Buddy, what are you thinking about 
+Shubham Mahajan 880
+So, all voweks of givenstring is - uaaaa
+So, all consonants of givenstring is - Shbhm Mhjn 
+It's not an alphabetical character: 880
+*/    
 }
