@@ -556,29 +556,55 @@ It's not an alphabetical character: 880
 
 // ____________ ____________ ____________ ____________ ____________
 
-// Qun - Find the indexing of same variabe in indexing - 
-
- string s5 = "shubham";
-//  string f;
-//  cout<<"which characte you want toi target"<<endl;
-//  cin>>f;
- int count=0;
-
- for (int i = 0; i < s5.size(); i++)
- {
-    for (int j = i; j < s5.size(); j++)
-    {
-        if (s5[i]==s5[j])
-        {
-            count++;
-            cout<<"For "<<s5[i]<<"count is";
-        }
-    }    
- }
- cout<<count<<endl;
- 
- 
 //  Qun - common letters sequences in a string - 
-    
+// Using shortcut menthod of STL -
+
+// string text,pattern;
+// cin>>text>>pattern;
+// size_t index = text.find(pattern,5);
+// if (index!=string::npos)
+// {
+//     cout<<index<<endl;
+// }
+/*
+abcdefabcghijabc 
+abc
+6
+*/
+
+// ____________ ____________ ____________ ____________ ____________
+
+// Qun - For given two strings check that are rotation of each other or not?
+string two,one;
+cout<<"write string one and two respectively "<<endl;
+cin>>one>>two;
+
+/* 
+Rotation concept - Campus - 1st :-scampu, 2nd:-uscamp, 3rd:-puscam, 4th:-mpusca, 5th:-ampusc, 6th :=campus
+📌 Logic - if we write twuce a string then it can create all possible rotation of itself. 
+*/
+string check = one+one;
+auto index = check.find(two);//using find function 
+if (index != string::npos)
+{
+    cout<<"Yes, they are rotation  of each other";
+}
+else
+{
+    cout<<"No, they are not";
+}
+
+/*
+write string one and two respectively 
+abc
+bac
+No, they are not
+
+write string one and two respectively
+abc
+bca
+Yes, they are rotation  of each other
+*/
+
 
 }
