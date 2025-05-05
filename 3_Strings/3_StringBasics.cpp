@@ -498,7 +498,7 @@ int main()
 
     // o/p -  Mcrsft
 
-    // ____________ ____________ 
+    // ____________ ____________
 
     // Remove Consonants from string -
     // string s = "Microsoft";
@@ -512,7 +512,6 @@ int main()
     // o/p - ioo
 
     // ____________ ____________ ____________ ____________ ____________
-
 
     // Distinguish Vowels and Consonants in a given string -
 
@@ -538,73 +537,152 @@ int main()
     //     else
     //     {
     //         NoALphaChar+=s[i];
-            
+
     //     }
     // }
-    
+
     // cout << "So, all voweks of givenstring is - " << vwls << endl;
     // cout << "So, all consonants of givenstring is - " << cnsnnts << endl;
     // cout << "It's not an alphabetical character: " << NoALphaChar << endl;
 
-/*
-Buddy, what are you thinking about 
-Shubham Mahajan 880
-So, all voweks of givenstring is - uaaaa
-So, all consonants of givenstring is - Shbhm Mhjn 
-It's not an alphabetical character: 880
-*/
+    /*
+    Buddy, what are you thinking about
+    Shubham Mahajan 880
+    So, all voweks of givenstring is - uaaaa
+    So, all consonants of givenstring is - Shbhm Mhjn
+    It's not an alphabetical character: 880
+    */
+
+    // ____________ ____________ ____________ ____________ ____________
+
+    //  Qun - common letters sequences in a string -
+    // Using shortcut menthod of STL -
+
+    // string text,pattern;
+    // cin>>text>>pattern;
+    // size_t index = text.find(pattern,5);
+    // if (index!=string::npos)
+    // {
+    //     cout<<index<<endl;
+    // }
+    /*
+    abcdefabcghijabc
+    abc
+    6
+    */
+
+    // ____________ ____________ ____________ ____________ ____________
+
+    // Qun - For given two strings check that are rotation of each other or not?
+    // string two,one;
+    // cout<<"write string one and two respectively "<<endl;
+    // cin>>one>>two;
+
+    // /*
+    // Rotation concept - Campus - 1st :-scampu, 2nd:-uscamp, 3rd:-puscam, 4th:-mpusca, 5th:-ampusc, 6th :=campus
+    // 📌 Logic - if we write twuce a string then it can create all possible rotation of itself.
+    // */
+    // string check = one+one;
+    // auto index = check.find(two);//using find function
+    // if (index != string::npos)//STL Vector Part
+    // {
+    //     cout<<"Yes, they are rotation  of each other";
+    // }
+    // else
+    // {
+    //     cout<<"No, they are not";
+    // }
+
+    /*
+    write string one and two respectively
+    abc
+    bac
+    No, they are not
+
+    write string one and two respectively
+    abc
+    bca
+    Yes, they are rotation  of each other
+    */
 
 // ____________ ____________ ____________ ____________ ____________
+// Qun - Enter the First Non-Repeating Character from the given string -
 
-//  Qun - common letters sequences in a string - 
-// Using shortcut menthod of STL -
-
-// string text,pattern;
-// cin>>text>>pattern;
-// size_t index = text.find(pattern,5);
-// if (index!=string::npos)
-// {
-//     cout<<index<<endl;
+//     string s3;
+//     cout << "WHat's the text wants to share" << endl;
+//     cin >> s3;
+    
+//     for (int i = 0; i < s3.size(); i++)
+//     {
+//         bool  repeating = false;
+//         for (int j = 0; j < s3.size(); j++)
+//         {
+//             if (j!=i)// jis pr khade h usko check nhi krna h, otherwise matlb hi kya non repeatinhg check krne ka
+//             {
+//                 if (s3[j]==s3[i])
+//                 {
+//                     repeating = true;
+//                     break; // agr ek baar repeating hua to agge bhui hoga hi              }
+                
+//             }
+            
+//         }
+        
+//     }
+//     if (repeating == false)
+//     {
+//         cout<<s3[i]<<endl;
+//         return 0;
+//     }
 // }
-/*
-abcdefabcghijabc 
-abc
-6
-*/
-
-// ____________ ____________ ____________ ____________ ____________
-
-// Qun - For given two strings check that are rotation of each other or not?
-string two,one;
-cout<<"write string one and two respectively "<<endl;
-cin>>one>>two;
-
-/* 
-Rotation concept - Campus - 1st :-scampu, 2nd:-uscamp, 3rd:-puscam, 4th:-mpusca, 5th:-ampusc, 6th :=campus
-📌 Logic - if we write twuce a string then it can create all possible rotation of itself. 
-*/
-string check = one+one;
-auto index = check.find(two);//using find function 
-if (index != string::npos)
-{
-    cout<<"Yes, they are rotation  of each other";
-}
-else
-{
-    cout<<"No, they are not";
-}
+// cout<<"Not Found"<<endl;
 
 /*
-write string one and two respectively 
-abc
-bac
-No, they are not
+WHat's the text wants to share
+abdbcdaeghh
+c
 
-write string one and two respectively
-abc
-bca
-Yes, they are rotation  of each other
+WHat's the text wants to share
+naman
+m
 */
 
+// ____________ ____________ 
+
+// Qun - Find the First Repeating element of the string - 
+
+string s3;
+cout << "WHat's the text wants to share" << endl;
+cin >> s3;
+
+for (int i = 0; i < s3.size(); i++)
+{
+    for (int j = 0; j < s3.size(); j++)
+    {
+        if (j!=i)
+        {
+            if (s3[j]==s3[i])
+            {
+                cout<<"First Repeating String is - "<<s3[i];
+                return 0;
+            }
+        }
+    }
+}
+
+/*
+WHat's the text wants to share
+zxanfgung
+First Repeating String is - n
+
+WHat's the text wants to share
+naman
+First Repeating String is - n
+
+WHat's the text wants to share
+shubham
+First Repeating String is - h
+*/
 
 }
+
