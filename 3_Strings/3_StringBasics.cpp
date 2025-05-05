@@ -651,24 +651,24 @@ m
 
 // Qun - Find the First Repeating element of the string - 
 
-string s3;
-cout << "WHat's the text wants to share" << endl;
-cin >> s3;
+// string s3;
+// cout << "WHat's the text wants to share" << endl;
+// cin >> s3;
 
-for (int i = 0; i < s3.size(); i++)
-{
-    for (int j = 0; j < s3.size(); j++)
-    {
-        if (j!=i)
-        {
-            if (s3[j]==s3[i])
-            {
-                cout<<"First Repeating String is - "<<s3[i];
-                return 0;
-            }
-        }
-    }
-}
+// for (int i = 0; i < s3.size(); i++)
+// {
+//     for (int j = 0; j < s3.size(); j++)
+//     {
+//         if (j!=i)
+//         {
+//             if (s3[j]==s3[i])
+//             {
+//                 cout<<"First Repeating String is - "<<s3[i];
+//                 return 0;
+//             }
+//         }
+//     }
+// }
 
 /*
 WHat's the text wants to share
@@ -684,5 +684,49 @@ shubham
 First Repeating String is - h
 */
 
+// Method - 2
+string s4;
+cout << "WHat's the text wants to share" << endl;
+cin >> s4;
+
+for (int i = 0; i < s4.size(); i++)
+{
+    int count=0;
+    for (int j = 0; j < s4.size(); j++)
+    {
+        if (s4[j]==s4[i])
+        {
+            count++;
+        }
+    }
+    if (count>1)
+    {
+        cout<<"First Repeated character is - "<<s4[i]<<"  and repeated - "<<count<<" times"<<endl;
+        return 0;
+    }
+    
+}
+
+/*
+WHat's the text wants to share
+shubham
+First Repeated character is - h  and repeated - 2 times
+
+WHat's the text wants to share
+naman
+First Repeated character is - n  and repeated - 2 times
+
+WHat's the text wants to share
+indrajeet
+First Repeated character is - e  and repeated - 2 times
+
+WHat's the text wants to share
+Mahajan
+First Repeated character is - a  and repeated - 3 times
+
+WHat's the text wants to share
+Pradhyumn
+Not found the repeated character
+*/
 }
 
