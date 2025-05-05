@@ -118,9 +118,10 @@ int main()
     Yes, Palindrome
     */
 
-    // ____________ ____________
+// ____________ ____________ ____________ ____________ ____________
 
-    // Count words in string -
+
+// Qun1 -  Count words in string -
 
     // string s1;
     // cout<<"What's1 in your mind"<<endl;
@@ -175,9 +176,10 @@ int main()
     //     cout << count_words(s1);
     // }
 
-    // ____________ ____________
+// ____________ ____________
 
-    // For Vowels using function -
+// Qun 2 -  Count words in string -
+// For Vowels using function -
 
     // #include <bits/stdc++.h>
     // using namespace std;
@@ -206,8 +208,10 @@ int main()
     //     cout << count_vowels(s1);
     // }
 
-    // ____________ ____________
+// ____________ ____________
 
+// Qun 2.1 -  Count Consonants in string -
+    // For Consonants using function -
     // #include <bits/stdc++.h>
     // using namespace std;
 
@@ -236,9 +240,9 @@ int main()
     //     cout << count_Consonants(s1);// 13
     // }
 
-    // ____________ ____________ ____________ ____________ ____________
+// ____________ ____________ ____________ ____________ ____________
 
-    // QUn - For the 2 given strings check that are they both Anagram of each other. print yes or no only
+// QUn 3 - For the 2 given strings check that are they both Anagram of each other. print yes or no only
     /*
     Anagram - ek string ke saare characters kisi bhi order me utne hi no. of times agr dusri string me aa rhe he, and no ay another character, then they are Anagram of each other.
     Ex. - S1 - abc, and S2 - cba or bac or bca any of these are Ahanagram of String -1
@@ -283,9 +287,9 @@ int main()
     After sort string 1 is Maknsu and string 2 is akmnpsuu
     we can see, strings are Not an Anagram
     */
-    // ____________ ____________ ____________ ____________ ____________
+// ____________ ____________ ____________ ____________ ____________
 
-    // Qun - Sum of numbers inside the string.
+// Qun 4 - Sum of numbers inside the string.
 
     // string s1 = "1578";
 
@@ -325,8 +329,9 @@ int main()
     // cout<<int('9')<<endl;//57
     // ____________ ____________
 
-    // Lower & Upper case -
-    // Qun make first letter capital of given string or user taken string, but if already capital then no need to change anything -
+// Lower & Upper case -
+
+// Qun 5 -  make first letter capital of given string or user taken string, but if already capital then no need to change anything -
 
     // string a = "shruti";
     // 📌 Logic - For making first letter capital of given small case string , simple substract the no. 32 which is ASCII Value difference of a-A : 97-65 = 32. and applicable for all the alphabets
@@ -345,9 +350,9 @@ int main()
 
     // }
     // cout<<"So the changes is here -  "<<a1<<endl;
-    // ____________ ____________
+// ____________ ____________
 
-    // Qun make first letter Small of given string or user taken string, but if already Small then no need to change anything -
+// Qun 6 -  make first letter Small of given string or user taken string, but if already Small then no need to change anything -
 
     // string a1;
     // cout<<"What word you want to write and conver the first lower letter into lowewr letter"<<endl;
@@ -387,8 +392,9 @@ int main()
     So, string we got in Upper Case is MICROSOFT
     */
 
-    // ____________ ____________
-    // Qun - For the entirre string convert Upper string to Lower string
+// ____________ ____________
+
+// Qun 7 - For the entirre string convert Upper string to Lower string
 
     // string a1;
     // cout<<"What's1 in yor mind for lower letter strig - "<<endl;
@@ -423,9 +429,9 @@ int main()
     // s1[3]= toupper(s1[3]);
     // cout<<s1<<endl;//MicRosoft
 
-    // ____________ ____________
+// ____________ ____________
 
-    // Qun - change all the cases of string.
+// Qun 8 - change all the cases of string.
 
     //     string s1 = "sHubhAm";
     //     for (int i = 0; i < s1.size(); i++)
@@ -474,9 +480,9 @@ int main()
     So, after the case changes the string we have is - NaMaN
     */
 
-    // ____________ ____________
+// ____________ ____________
 
-    // QUn - String another operations -
+//  String another operations -
     // String additioon -
     string a = "Microsoft ", b = "Hyderabad";
     string c = a + " " + b;
@@ -485,6 +491,7 @@ int main()
     a += b;
     cout << a << endl; /// Microsoft Hyderabad
 
+// Qun 9 - Remove Vowels, COnsonants from the given string.
     // Remove vowels from string -
 
     // string s = "Microsoft";
@@ -511,9 +518,9 @@ int main()
     // }
     // o/p - ioo
 
-    // ____________ ____________ ____________ ____________ ____________
+// ____________ ____________ ____________ ____________ ____________
 
-    // Distinguish Vowels and Consonants in a given string -
+//Qun 10 - Distinguish Vowels and Consonants in a given string -
 
     // string s;
     // cout << "Buddy, what are you thinking about " << endl;
@@ -553,9 +560,9 @@ int main()
     It's not an alphabetical character: 880
     */
 
-    // ____________ ____________ ____________ ____________ ____________
+// ____________ ____________ ____________ ____________ ____________
 
-    //  Qun - common letters sequences in a string -
+// Qun 11 - common letters sequences in a string -
     // Using shortcut menthod of STL -
 
     // string text,pattern;
@@ -571,9 +578,9 @@ int main()
     6
     */
 
-    // ____________ ____________ ____________ ____________ ____________
+// ____________ ____________ ____________ ____________ ____________
 
-    // Qun - For given two strings check that are rotation of each other or not?
+//Qun 12 - For given two strings check that are rotation of each other or not?
     // string two,one;
     // cout<<"write string one and two respectively "<<endl;
     // cin>>one>>two;
@@ -606,7 +613,8 @@ int main()
     */
 
 // ____________ ____________ ____________ ____________ ____________
-// Qun - Enter the First Non-Repeating Character from the given string -
+
+//Qun 13 - Enter the First Non-Repeating Character from the given string -
 
 //     string s3;
 //     cout << "WHat's the text wants to share" << endl;
@@ -649,7 +657,7 @@ m
 
 // ____________ ____________ 
 
-// Qun - Find the First Repeating element of the string - 
+//Qun 14 - Find the First Repeating element of the string - 
 
 // string s3;
 // cout << "WHat's the text wants to share" << endl;
@@ -685,27 +693,29 @@ First Repeating String is - h
 */
 
 // Method - 2
-string s4;
-cout << "WHat's the text wants to share" << endl;
-cin >> s4;
 
-for (int i = 0; i < s4.size(); i++)
-{
-    int count=0;
-    for (int j = 0; j < s4.size(); j++)
-    {
-        if (s4[j]==s4[i])
-        {
-            count++;
-        }
-    }
-    if (count>1)
-    {
-        cout<<"First Repeated character is - "<<s4[i]<<"  and repeated - "<<count<<" times"<<endl;
-        return 0;
-    }
+// string s4;
+// cout << "WHat's the text wants to share" << endl;
+// cin >> s4;
+
+// for (int i = 0; i < s4.size(); i++)
+// {
+//     int count=0;
+//     for (int j = 0; j < s4.size(); j++)
+//     {
+//         if (s4[j]==s4[i])
+//         {
+//             count++;
+//         }
+//     }
+//     if (count>1)
+//     {
+//         cout<<"First Repeated character is - "<<s4[i]<<"  and repeated - "<<count<<" times"<<endl;
+//         return 0;
+//     }
     
-}
+// }
+// cout<<"Not found the repeated character"<<endl;
 
 /*
 WHat's the text wants to share
@@ -721,7 +731,7 @@ indrajeet
 First Repeated character is - e  and repeated - 2 times
 
 WHat's the text wants to share
-Mahajan
+Mahajan 
 First Repeated character is - a  and repeated - 3 times
 
 WHat's the text wants to share
