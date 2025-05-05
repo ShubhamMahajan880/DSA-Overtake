@@ -4,13 +4,13 @@ Programs I've done -
 2 - Palindrome Number
 3 - sum of digits
 4 - Prime No. program
-5 - All Prime NNumbers b/a a & b
+5 - All Prime Numbers b/a a & b
 
 Array Programs - 
 1 - Taking Input in array. Sum, Mul, & Avg of an aray
 2 - Find Min, Max & Any particular element in array
 3 - Find element at any indexing, 1st index element, last index element
-4 - Find Frequqency of any element in Array
+4 - Find Frequency of any element in Array
 5 - Reverse & Sorting of an array
 6 - Max & Min using Sorting, K-max & K-Min using Sorting
 7 - Targeted Element. Print yes if there is a  pair in the array that sum up to target. Array ke kisi element ya kinhi bhi elements ka sum target ke brabr he to yes kre
@@ -18,3 +18,21 @@ Array Programs -
 9 - Find majority element if any. 
 10 - Array Rotation - Left, Right, K-times
 11 - Subarray : - If target found using subarray sum then put yes otherwise leave it with no. 
+12 -  maximum Profit on selling
+
+String Programs - 
+1 - Taking Input in string, Sort & Reverse, Palindrome of string.
+2 - WAP for Count words in string -
+2.1 - Program for count Vowels & Consonants in String- 
+3 - For the 2 given strings check that are they both Anagram of each other. print yes or no only
+4 - Program for Sum of numbers inside the string.
+5 - make first letter capital of given string or user taken string, but if already capital then no need to change anything -
+6 - make first letter Small of given string or user taken string, but if already Small then no need to change anything -
+7 - For the entirre string convert Upper string to Lower string
+8 - change all the cases of string.
+9 - Remove Vowels, COnsonants from the given string.
+10 - Distinguish Vowels and Consonants in a given string -
+11 - common letters sequences in a string -
+12 - For given two strings check that are rotation of each other or not?
+13 - Enter the First Non-Repeating Character from the given string -
+14 - Find the First Repeating element of the string - 
