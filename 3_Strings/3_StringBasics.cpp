@@ -657,7 +657,7 @@ m
 
 // ____________ ____________ 
 
-//Qun 14 - Find the First Repeating element of the string - 
+//Qun 14- Find the First Repeating element of the string - 
 
 // string s3;
 // cout << "WHat's the text wants to share" << endl;
