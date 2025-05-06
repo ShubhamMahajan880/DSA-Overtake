@@ -4,41 +4,42 @@ using namespace std;
 int main()
 {
 
-    string s;
-    cout << "Buddy, what are you thinking about " << endl;
-    getline(cin, s);
+    int n, m;
+    cout << "ENter the no. of Roews and Columns you want" << endl;
+    cin >> n >> m;
 
-    string vwls, cnsnnts, NoALphaChar;
-    for (int i = 0; i < s.size(); i++)
+    int matrix[n][m];
+    int TransposedMatrix[n][m];
+    cout << "Now insert the matrix elements, mention you favourite Angel numbers " << endl;
+    for (int i = 0; i < n; i++)
     {
-        if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z') || s[i]==' ')
+        for (int j = 0; j < m; j++)
         {
-            if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' ||
-                s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U')
-            {
-                vwls += s[i];
-            }
-            else
-            {
-                cnsnnts += s[i];
-            }
-        }
-        else
-        {
-            NoALphaChar+=s[i];
-            
+            cin >> matrix[i][j];
         }
     }
-    
-    cout << "So, all voweks of givenstring is - " << vwls << endl;
-    cout << "So, all consonants of givenstring is - " << cnsnnts << endl;
-    cout << "It's not an alphabetical character: " << NoALphaChar << endl;
 
-/*
-Buddy, what are you thinking about 
-Shubham Mahajan 880
-So, all voweks of givenstring is - uaaaa
-So, all consonants of givenstring is - Shbhm Mhjn 
-It's not an alphabetical character: 880
-*/    
+    cout << "So, the entered Array Matrix is - " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+    // For Printing the Transposed Matrices -
+    cout << "So, the Transposed Matrices is " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            
+
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
