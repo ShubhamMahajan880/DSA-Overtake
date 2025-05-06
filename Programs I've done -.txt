@@ -28,9 +28,9 @@ String Programs -
 4 - Program for Sum of numbers inside the string.
 5 - make first letter capital of given string or user taken string, but if already capital then no need to change anything -
 6 - make first letter Small of given string or user taken string, but if already Small then no need to change anything -
-7 - For the entirre string convert Upper string to Lower string
+7 - For the entire string convert Upper string to Lower string
 8 - change all the cases of string.
-9 - Remove Vowels, COnsonants from the given string.
+9 - Remove Vowels, Consonants from the given string.
 10 - Distinguish Vowels and Consonants in a given string -
 11 - common letters sequences in a string -
 12 - For given two strings check that are rotation of each other or not?
@@ -39,9 +39,9 @@ String Programs -
 
 Matrix/2-D Array Programs - 
 1 - Basic Input/Output of 2D Array. 
-2 - Print SUm of all elements in the matrix -
+2 - Print Sum of all elements in the matrix -
 3 - check for the target element that it is present in the matrix or not, if present then print Yes.
-4 - Find the absolute difference of both diagonal elemenmts of a Matrix 
+4 - Find the absolute difference of both diagonal elements of a Matrix 
 5 - Find the sum of only boundary elements in the matrix -
 6 - Transpose of a Matrix -
 7 - Rotate the Matrix by 180 degree.
