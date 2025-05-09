@@ -1,6 +1,6 @@
 Some Notes to remember forever - 
 
-1 - return 0 is specifically uses for main function.
+1 - return 0 is specifically uses for main function. which exit the function at the point.
 2 - agr hm koi sa nya variable bnate h jo baad me use hoga code me ya loop me jese SUM,COUNT to use value 0 assign krte h taaki garbage value naa aaye
 3 - return 00 ke nioche ki koi chz kabhi print nahi hogi
 4 - return -1 basically indicates that element not found
@@ -12,3 +12,4 @@ Some Notes to remember forever -
 9.1 - //📌 Logic - For making first letter capital of given small case string , simple substract the no. 32 which is ASCII Value difference of a-A : 97-65 = 32. and applicable for all the alphabets
 9.2 - From Capital to Small - Add 32. 
 10 - IF Time Complexity is > than 10^7, then not run in  1 sec.
+11 - Void function do not return anything.

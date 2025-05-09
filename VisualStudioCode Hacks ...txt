@@ -32,7 +32,7 @@
 31) Ctrl+Shft+X = Open Extension bar
 
 111) My created shortcut -  Alt+X = to view the Minimap
-112) TO restart extensins - Shift+R
+112) Restart Extension - Ctrl+Shft+R
 113) TO commit & Push together - Alt+U
 
 
