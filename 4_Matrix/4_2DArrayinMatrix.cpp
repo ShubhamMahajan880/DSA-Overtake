@@ -241,7 +241,7 @@ So, the sum of entire matrix is - 45
     4 5 6
     7 8 9
     So the sum of PDE is - 15 and another diagonal is  15
-    So, clearly the difference of both diagonals is -  0
+    So, clearly the difference of both diagonals is -  
     */
 
 // ____________ ____________ ____________ ____________ ____________

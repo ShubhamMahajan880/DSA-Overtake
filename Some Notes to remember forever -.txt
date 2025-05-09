@@ -11,3 +11,4 @@ Some Notes to remember forever -
 9 - in string for get the int from ASCII Value - substract '0' OR 48
 9.1 - //📌 Logic - For making first letter capital of given small case string , simple substract the no. 32 which is ASCII Value difference of a-A : 97-65 = 32. and applicable for all the alphabets
 9.2 - From Capital to Small - Add 32. 
+10 - IF Time Complexity is > than 10^7, then not run in  1 sec.
