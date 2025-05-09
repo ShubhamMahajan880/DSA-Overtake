@@ -910,6 +910,7 @@ int main()
     //     i++;
     // }
     // // 1 2 3 4 5 6 7 
+// Now, we aregoing to use this while loop and basic array concepts in Binary search. we learnt this to decrease the T.C. of some programs we've created
 // ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________    
 
 }

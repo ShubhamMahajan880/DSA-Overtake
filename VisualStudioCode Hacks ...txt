@@ -30,6 +30,9 @@
 29) Ctril+D = for selecting all i's of a variable. Or selecting a same word or variable in a line
 30) Alt + mouse scroll fast.
 31) Ctrl+Shft+X = Open Extension bar
+
 111) My created shortcut -  Alt+X = to view the Minimap
+112) TO restart extensins - Shift+R
+113) TO commit & Push together - Alt+U
 
 
