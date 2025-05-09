@@ -47,3 +47,7 @@ Matrix/2-D Array Programs -
 7 - Rotate the Matrix by 180 degree.
 8 - Rotate the array by 90 CLW.
 9 - Rotate the array by 90 ACLW.
+
+Binary Search - 
+1 - Binary Search for sorted array - increasing & decreasing
+2 - sum of 2 elements of array equal to target elemnt thern print yes, using Binary Search concept -

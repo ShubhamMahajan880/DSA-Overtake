@@ -17,11 +17,14 @@ int main()
     }
     cout << endl;
     cout << "So, your enteres aray is - " << endl;
+
+    // sort(arr, arr+n);Sorting the array because what if user coudn;t privde us a sorted arrayu
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
+
 
     int targetelement;
     cout << "Now, let me knw what is your Targeted Element" << endl;
