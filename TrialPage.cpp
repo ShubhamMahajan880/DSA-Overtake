@@ -4,42 +4,78 @@ using namespace std;
 int main()
 {
 
-    int n, m;
-    cout << "ENter the no. of Roews and Columns you want" << endl;
-    cin >> n >> m;
+    
+    int n;
+    cout << "Enter the size of array - ";
+    cin >> n;
 
-    int matrix[n][m];
-    int TransposedMatrix[n][m];
-    cout << "Now insert the matrix elements, mention you favourite Angel numbers " << endl;
+    int arr[n];
+    cout << "MEntion the array values you want tot inserett - " << endl;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < m; j++)
-        {
-            cin >> matrix[i][j];
-        }
+        cin >> arr[i];
     }
-
-    cout << "So, the entered Array Matrix is - " << endl;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
-    }
-
     cout << endl;
-    // For Printing the Transposed Matrices -
-    cout << "So, the Transposed Matrices is " << endl;
+    cout << "So, your enteres aray is - " << endl;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < m; j++)
-        {
-            
-
-            cout << matrix[i][j] << " ";
-        }
-        cout << endl;
+        cout << arr[i] << " ";
     }
+    cout << endl;
+
+    int targetelement;
+    cout << "Now, let me knw what is your Targeted Element" << endl;
+    cin >> targetelement;
+
+    // Bianry Search process -
+    int left = 0, right = n - 1;
+    while (left <= right)
+    {
+        int mid = (left + right) / 2;
+        if (arr[mid] == targetelement)
+        {
+            cout << "Element is here and found at - " << " " << mid << endl;
+            return 0;
+        }
+        else if (arr[mid]>targetelement)
+        {
+            left = mid+1;
+            
+        }
+        else
+        {
+            right = mid-1;
+        }
+        
+    }
+    cout<<"Element not found braddy"<<endl;
+
+/*
+Enter the size of array - 7
+MEntion the array values you want tot inserett - 
+7 6 5 4 3 2 1
+So, your enteres aray is - 
+7 6 5 4 3 2 1 
+Now, let me knw what is your Targeted Element
+3
+Element is here and found at -  4
+
+Enter the size of array - 7
+MEntion the array values you want tot inserett - 
+7 6 5 4 3 2 1
+So, your enteres aray is -
+7 6 5 4 3 2 1
+Now, let me knw what is your Targeted Element
+6
+Element is here and found at -  1
+
+Enter the size of array - 7
+MEntion the array values you want tot inserett - 
+7 6 5 4 3 2 1
+So, your enteres aray is -
+7 6 5 4 3 2 1
+Now, let me knw what is your Targeted Element
+56
+Element not found braddy
+*/
 }
