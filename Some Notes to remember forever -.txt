@@ -12,4 +12,4 @@ Some Notes to remember forever -
 9.1 - //📌 Logic - For making first letter capital of given small case string , simple substract the no. 32 which is ASCII Value difference of a-A : 97-65 = 32. and applicable for all the alphabets
 9.2 - From Capital to Small - Add 32. 
 10 - IF Time Complexity is > than 10^7, then not run in  1 sec.
-11 - Void function do not return anything.
+11 - Void function do not return anything. void use kr k func define kiya h t o calling k tym function name likh  he only argument dete tym. and agar int use kr k fun define kiya h to calling ke tym cout<< function calling(arguements) krna he

@@ -51,3 +51,12 @@ Matrix/2-D Array Programs -
 Binary Search - 
 1 - Binary Search for sorted array - increasing & decreasing
 2 - sum of 2 elements of array equal to target elemnt thern print yes, using Binary Search concept -
+
+Recursion - 
+1 - Basic Understanding of Recursion - 
+2 - Factorial Program using function
+3 - Sum of N- Natural numbers using recursion
+4 - n power of x number 
+5 - Sum of elements of an array – 
+5.1 - Mul of elements of an array - 
+6 - Odd No. from n to m using recursion.

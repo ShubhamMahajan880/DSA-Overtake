@@ -1,1 +1,1 @@
-int n;
+cout<<arr[2];
