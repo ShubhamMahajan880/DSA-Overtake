@@ -257,21 +257,22 @@ OR  map_name.insert({'Key', valupair});
 // */    
 // ____________ ____________ 
 // from now onwards instead of array we'll be creating always Vector - 
-int n; cout<<"Enter size of vector"<<endl; cin>>n;
 
-vector<int> v(n);
-for (int i = 0; i <n; i++)
-{
-    cin>>v[i];
-}
+// int n; cout<<"Enter size of vector"<<endl; cin>>n;
 
-cout<<"So, the inserted elements of vector are following - "<<endl;
-for (int i = 0; i < n; i++)
-{
-    cout<<v[i]<<" ";
-}
-cout<<endl;
-cout<<v.size();
+// vector<int> v(n);
+// for (int i = 0; i <n; i++)
+// {
+//     cin>>v[i];
+// }
+
+// cout<<"So, the inserted elements of vector are following - "<<endl;
+// for (int i = 0; i < n; i++)
+// {
+//     cout<<v[i]<<" ";
+// }
+// cout<<endl;
+// cout<<v.size();
 
 
 
