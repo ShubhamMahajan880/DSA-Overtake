@@ -13,3 +13,5 @@ Some Notes to remember forever -
 9.2 - From Capital to Small - Add 32. 
 10 - IF Time Complexity is > than 10^7, then not run in  1 sec.
 11 - Void function do not return anything. void use kr k func define kiya h t o calling k tym function name likh  he only argument dete tym. and agar int use kr k fun define kiya h to calling ke tym cout<< function calling(arguements) krna he
+12 - Vector, Set & Map are very useful Data Structures
+

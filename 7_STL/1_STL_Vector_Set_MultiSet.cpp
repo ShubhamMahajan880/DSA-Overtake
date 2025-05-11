@@ -1,10 +1,11 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 // #include <iostream>
 // #include<algorithm>
 // #include<climits>
 // #include<string>
 // #include<cctype>
 // #include<vector>
+// #include<set>
 using namespace std;
 int main()
 {
@@ -72,7 +73,8 @@ int main()
 
     // ____________ ____________ ____________ ____________ ____________
 
-    // 2 - using STL for unique and Non-repeating elements.
+    // 2 - using STL for unique and Non-repeating elements by using SET.
+    // Vector,Set & map are very useful Data Structures.
     /* If in array I need to delete the repeating elemnents and want oonly unique elements which also in
     sorted manner then it 's little bit complecated and having more complecxity, so using STL and pre defined functions */
     // 📒 SET - using SET data structure we can directly store the Non-repeating and unique characters
@@ -264,70 +266,71 @@ int main()
     // ____________ ____________
 
     // Qun - Remove duplicate elements of array and arrange array in increasing order
-    int n;
-    cout << "hey smita, Array size" << endl;
-    cin >> n;
+    // int n;
+    // cout << "hey smita, Array size" << endl;
+    // cin >> n;
 
-    int arr[n];
-    cout << "Bro, elements is also necessary to perform" << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+    // int arr[n];
+    // cout << "Bro, elements is also necessary to perform" << endl;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cin >> arr[i];
+    // }
 
-    // now for sorting w/o using sort and for duplcate w/o uisng any logic direct;ly by using SET
-    set<int> se;
-    for (int i = 0; i < n; i++)
-    {
-        se.insert(arr[i]); // inserting all array elements into sset function
-    }
-    cout << "So, the unique elements in increasing order of array are following - " << endl;
+    // // now for sorting w/o using sort and for duplcate w/o uisng any logic direct;ly by using SET
+    // set<int> se;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     se.insert(arr[i]); // inserting all array elements into sset function
+    // }
+    // cout << "So, the unique elements in increasing order of array are following - " << endl;
 
-    for (int i : se)
-    {
-        cout << i << " ";
-    }
-    cout << endl;
+    // for (int i : se)
+    // {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
 
-    /*
-    hey smita, Array size
-    8
-    Bro, elements is also necessary to perform
-    11 2 31 5 11 99 47 11
-    So, the unique elements in increasing order of array are following -
-    2 5 11 31 47 99
-    */
-    // ____________ ____________
-    // Par agar me saare elements chahta hu sorted way me but duuplicates remopve nhi krna chahta, so i'll use multiset.
-    // with duplicates -
-    multiset<int> sm;
-    for (int i = 0; i < n; i++)
-    {
-        sm.insert(arr[i]);
-    }
-    cout << "Now, another operaiton : Printing in increasing order only w/o removing the duplicate ones" << endl;
-    for (auto i : sm)
-    {
-        cout << i << " ";
-    }
-    cout << endl;
+    // /*
+    // hey smita, Array size
+    // 8
+    // Bro, elements is also necessary to perform
+    // 11 2 31 5 11 99 47 11
+    // So, the unique elements in increasing order of array are following -
+    // 2 5 11 31 47 99
+    // */
+    // // ____________ ____________
+    // // Par agar me saare elements chahta hu sorted way me but duuplicates remopve nhi krna chahta, so i'll use multiset.
+    // // with duplicates -
+    // multiset<int> sm;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     sm.insert(arr[i]);
+    // }
+    // cout << "Now, another operaiton : Printing in increasing order only w/o removing the duplicate ones" << endl;
+    // for (auto i : sm)
+    // {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
 
-    /*
-    hey smita, Array size
-    8
-    Bro, elements is also necessary to perform
-    11 2 31 5 11 99 47 11
-    So, the unique elements in increasing order of array are following -
-    2 5 11 31 47 99
-    Now, another operaiton : Printing in increasing order only w/o removing the duplicate ones
-    2 5 11 11 11 31 47 99
-    */
+    // /*
+    // hey smita, Array size
+    // 8
+    // Bro, elements is also necessary to perform
+    // 11 2 31 5 11 99 47 11
+    // So, the unique elements in increasing order of array are following -
+    // 2 5 11 31 47 99
+    // Now, another operaiton : Printing in increasing order only w/o removing the duplicate ones
+    // 2 5 11 11 11 31 47 99
+    // */
 
-    // for the size of set.
-    cout << se.size(); // 6 -  return the size of set -which is all unique elements only
-    cout << endl;
-    cout << sm.size(); // 8 - returns the size of multiset - which is of all the elemts not removed anyone includes duplicates too
-    cout << endl;
+    // // for the size of set.
+    // cout << se.size(); // 6 -  return the size of set -which is all unique elements only
+    // cout << endl;
+    // cout << sm.size(); // 8 - returns the size of multiset - which is of all the elemts not removed anyone includes duplicates too
+    // cout << endl;
+
 
 // ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________
 
