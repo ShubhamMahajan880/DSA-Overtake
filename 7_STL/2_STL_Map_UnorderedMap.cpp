@@ -129,7 +129,7 @@ OR  map_name.insert({'Key', valupair});
 
     // ____________ ____________ ____________ ____________ ____________
 
-    // Qun - for a string print all its characterrs that how mny times its rrpeating.
+    //Qun 1) - for a string print all its characterrs that how mny times its rrpeating.
 
     // string s;
     // cout << "what do you think baby..!!" << endl;

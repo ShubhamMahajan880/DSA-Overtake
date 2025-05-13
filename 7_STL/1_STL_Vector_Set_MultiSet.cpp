@@ -265,7 +265,7 @@ int main()
     
     // ____________ ____________
 
-    // Qun - Remove duplicate elements of array and arrange array in increasing order
+    //Qun 1) SET - Remove duplicate elements of array and arrange array in increasing order
     // int n;
     // cout << "hey smita, Array size" << endl;
     // cin >> n;
