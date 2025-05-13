@@ -50,7 +50,7 @@ Matrix/2-D Array Programs -
 
 Binary Search - 
 1 - Binary Search for sorted array - increasing & decreasing
-2 - sum of 2 elements of array equal to target elemnt thern print yes, using Binary Search concept -
+2 - sum of 2 elements of array equal to target element then print yes, using Binary Search concept -
 
 Recursion - 
 1 - Basic Understanding of Recursion - 
@@ -60,3 +60,13 @@ Recursion -
 5 - Sum of elements of an array – 
 5.1 - Mul of elements of an array - 
 6 - Odd No. from n to m using recursion.
+
+STL - 
+1 - Binary Search Implementation using STL.
+2) Vector DS in STL - Initialization, Input/Output, Insertion/Deletion, 
+3) Set Data Str. in STL - Initialization, Insertion/Deletion, 
+Time complexities for VECTOR, SET & MAP -
+3.1 - Using SET Remove duplicate elements of array and arrange array in increasing order
+4) Map DS in STL - Basic Operations, Insertion/Deletion, map with char datatype.
+4.1 - For a string print all its characters that how many times its repeating.  
+5) Unordered Map - 
