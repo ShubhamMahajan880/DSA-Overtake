@@ -1,38 +1,102 @@
-1) use ALT+UPARROW to put the lines of code up and below
-2) LoremN command is uses for get the paragraph of N words
-3) ctrl+/  <!--    -->   is a method for comment in HTML and shorcut is 
-4) HTML is case insensitive language
-5) CTRL + ENTER is shortcut for enter in next line
-6) ALT+Z is shortcut for coverting lorem vertical line to a single paragraph section. 
-7) Ctrl+F - for FInd and then Ctrl+Shft+H - for Replace
-8) SHIFT+ALT+AERROW KEY :-  For copy pasting the same line in VS code use
-9) ALT +  Mouse Click :-  Multicursor concept using 
-10) ctrl+` (backtree) is uses for open the terminal in visual code studio
-11) ctrl+D is uses for select all similar symbols at a time
-12) ALT+UpAerrow/DownAerrow for changing line up & down
-13) Alt + m := Shorcut for close output terminal
-13.1) Ctrl + K = for clearning terminal by not closing the output window
-14) Shift + Alt + F :- is uses for format the code in proper format.
-15) ctrl+B = close and opent the side bar(File,Extensions)
-16) ctrl + , = Opens the user setting
-17) ctrl + w = Close the tab
-18) Ctrl + n = open the new tab
-19) Ctrl + p + Ctrl + G = uses for go to particular Line no
-20) Ctrl + Shift + L = kisi word ko select kr k vo word jitni baar h utne cursors create krna
-21) Ctrl + K + W = Close all the open tabs at a time
-22) Ctrl + P = Open any file from command plattem from selected opened folder
-23) Shift + Delete = For Delete the entire row
-24) Ctrl + Shift + F = Uses for ek hi word baar baar h to use select krne k liye
-25) Ctrl + k + Ctrl + S = uses for create your own shortcut
-26) Ctrl + K O = Open folder Directly
-27) Shdt+Fn+Ctrl+ up & down aerrow => to change the file tab or reordering of opened tabs
-28) Ctrl+Shft+L = For selecting the same word, vatiable, text in while vs code at a time
-29) Ctril+D = for selecting all i's of a variable. Or selecting a same word or variable in a line
-30) Alt + mouse scroll fast.
-31) Ctrl+Shft+X = Open Extension bar
+Ctrl + Shift
+Ctrl + Shift + \  = Jump to matching bracket
+Ctrl + Shift + ` = Create new terminal Integrated terminal
+Ctrl + Shift + Home = Top/First page of file
+Ctrl + Shift + End= Bottom/last page of file
+Ctrl + Shift + Tab OR Ctrl + Shift + PgUp / PgDn OR Ctrl + Tab OR Alt + Left/Right  Arrow = Navigate editor group history – Jitni files khuli he unke bich me switch
+Ctrl + Shift + Enter = Insert Line Above
+Ctrl + Shift + S = Save file in directory
+Ctrl + Shift + T = Reopen the closed tab
+Ctrl + Shift + D = Show Debug
+Ctrl + Shift + E = Show Explorer Files
+Ctrl + Shift + F = Show Search Display
+Ctrl + Shift + F = Uses for ek hi word baar baar h to use select krne k liye
+Ctrl + Shift + G = Open Git Controls
+Ctrl + Shift + K = Delete the Line
+Ctrl + Shift + L = kisi word ko select kr k vo word jitni baar h utne cursors create krna
+Ctrl + Shift + M = Show Problems panel
+Ctrl + Shift + N = Open New Window
+Ctrl + Shift + O = Go to Symbol. When we have multiple sections or funcitons
+Ctrl + Shift + P OR F1= Show Command Pallate
+Ctrl + Shift + R =Reload All Extensions & Directory
+Ctrl + Shift + U = Show Output panel
+Ctrl + Shift + W = Close All Windows/Tabs at a time
+Ctrl + Shift + X = Show Extensions
 
-111) My created shortcut -  Alt+X = to view the Minimap
-112) Restart Extension - Ctrl+Shft+R
-113) TO commit & Push together - Alt+U
+Ctrl +
+ctrl+/ <! --    --> = is a method for comment, for particular line. 
+ctrl+` (back tree) = is uses for open the terminal in visual code studio
+Ctrl+, = User Settings
+Ctrl +. = Generate Documentation
+Ctrl+\ = Split editor. Split that selected editor tab in a separate tab
+Ctrl+↑ / ↓ = Scroll line up/down
+Ctrl+] / [ = Indent/outdent line
+Ctrl+ + - = Zoom in/out
+CTRL + ENTER is shortcut for enter in next line
+Ctrl + Home = Go to beginning of file 
+Ctrl + End = Go to end of file
+Ctrl + Shift + [ = Fold (collapse) region, comment ke under jitna he sb fold inside comment
+Ctrl + Shift +] = Unfold (uncollapse) region, comment ke under jo content folded tha use unfolded
+Ctrl + B = Open/Close Side Bar
+Ctrl + D = Jo word he vo jaha jaha he use ek ek kr select krna
+Ctrl + F = Find
+Ctrl + G = Go to at this line 
+Ctrl + H = Replace
+Ctrl + I = Quick Suggestions, Ask from Copilot
+Ctrl + J = Close and Clear the Terminal 
+Ctrl + K = for clearing terminal by not closing the output window
+Ctrl+ K S = Save All Files in one go
+Ctrl + N = New File
+Ctrl + O = Open File 
+Ctrl + P = Quick Open, Go to File
+Ctrl + S = Save File
+Ctrl + T = Cursor in Search bar
+Ctrl + U = Undo last cursor operation, last selected cursor pr jaana us word ke
+Ctrl + W = Close Editor
+Ctrl + Scroll Up Down = Page Scroll Up and Down
+
+Shift
+Shift + Home = Go at begin of the line
+Shift + End = Go at end of the line
+Shift + Pg up = Scroll Page up
+Shift + Pg Down = Scroll Page Down
+Shift + Delete = Delete current row
+Shift + Fun + Ctrl+ up & down arrow => to change the file tab or reordering of opened tabs
+SHIFT+ ALT + AERROW KEY: - For copy pasting the same line in VS code use
+Shift + Alt + A = Start Multiline Comment OR Block Comment
+Shift + Alt + I = Put cursor at the end of each line which are selected
+
+Alt
+Alt + M = Close the Terminal
+ALT+ Up Arrow/ Down Arrow = for changing line up & down
+ALT+ Z = for converting lorem vertical line to a single paragraph section. 
+ALT + Mouse Click: - Multi cursor concept using 
+
+My Created Shortcuts
+
+Alt + X = to view the Minimap
+Ctrl + Shift + R = Reload all extensions and windows
+Other Useful
+
+LoremN  - command is uses for get the paragraph of N words
+F12 = Go to Definition
+F11 – Full Screen or Short Screen as per window size required
+
+
+
+
+
+
+
+VS code Universal Documentation – 
+https://code.visualstudio.com/
+
+
+
+
+
+
+
+
 
 

@@ -1,5 +1,6 @@
 i = n;
-    // if (i == m)
-    // {
-    //     return m;
-    // }
+    if (i == m)
+    {
+        return n;
+        return m;
+    }
