@@ -1,27 +1,25 @@
-#include <bits/stdc++.h>
-#include <iostream>
-using namespace std;
-
 void insertSort(vector<int> &arr)
 {
     int n = arr.size();
     // insertion sort
 
+    
+
     for (int i = 0; i < n; i++)
     {
-        int max = INT_MIN;
-        int maxindx = -1;
-        // Max value
+        int min = INT_MAX;
+        int minindx = -1;
+        // min value
         for (int j = i; j < n; j++)
         {
-            if (arr[j] > max)
+            if (arr[j] < min)
             {
-                max = arr[j];
-                maxindx = j;
+                min = arr[j];
+                minindx = j;
             }
         }
-        // Swapping maximum element from unsorted starting index
-        swap(arr[i], arr[maxindx]); // pure me se max dhundh k use first waaali value se swap kr do
+        // Swapping minimum element from unsorted starting index
+        swap(arr[i], arr[minindx]);// pure me se min dhundh k use first waaali value se swap kr do
     }
 }
 
@@ -44,4 +42,3 @@ int main()
     {
         cout << i << " ";
     }
-}
