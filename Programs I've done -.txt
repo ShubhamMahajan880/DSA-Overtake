@@ -70,3 +70,10 @@ Time complexities for VECTOR, SET & MAP -
 4) Map DS in STL - Basic Operations, Insertion/Deletion, map with char datatype.
 4.1 - For a string print all its characters that how many times its repeating.  
 5) Unordered Map - 
+
+Sorting Algorithm's - 
+1 - Bubble Sort Implementation - increasing & Decreasing Order
+2 - Selection Sort Implementation
+3 - Insertion Sort Implementation 
+
+

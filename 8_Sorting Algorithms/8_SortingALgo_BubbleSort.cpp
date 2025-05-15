@@ -55,47 +55,47 @@ using namespace std;
 // */
 // }
 
-// // ____________ ____________
+// ____________ ____________
 
-// // Qun 1.1 - Bubble Sort Implementation for decrasing sorting
+// Qun 1.1 - Bubble Sort Implementation for decrasing sorting
 
-// //  void bubbleSort(vector<int> &arr) // calling througb call by address - mtlb yaha change hua to niche bhi array me change hona chahiye
-// // {
-// //     int n = arr.size();
-// //     for (int i = 0; i < n; i++) // vo loop jo saare elemenets ke liye chlega
-// //     {
-// //         for (int j = 0; j < n - 1; j++)
-// //         {
-// //             // agar agli value chhoti  he to swipe kre
-// //             if (arr[j] > arr[j + 1])
-// //             {
-// //                 swap(arr[j + 1], arr[j]);
-// //             }
-// //         }
-// //     }
-// // }
-// // int main()
-// // {
-// //     int n;
-// //     cout << "Size of the vector - " << endl;
-// //     cin >> n;
+//  void bubbleSort(vector<int> &arr) // calling througb call by address - mtlb yaha change hua to niche bhi array me change hona chahiye
+// {
+//     int n = arr.size();
+//     for (int i = 0; i < n; i++) // vo loop jo saare elemenets ke liye chlega
+//     {
+//         for (int j = 0; j < n - 1; j++)
+//         {
+//             // agar agli value chhoti  he to swipe kre
+//             if (arr[j] > arr[j + 1])
+//             {
+//                 swap(arr[j + 1], arr[j]);
+//             }
+//         }
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     cout << "Size of the vector - " << endl;
+//     cin >> n;
 
-// //     vector<int> arr(n);
-// //     cout << "Enter the Vector Elements " << endl;
-// //     for (int i = 0; i < n; i++)
-// //     {
-// //         cin >> arr[i];
-// //     }
-// //     cout << endl;
-// //     cout << "Hence the sorted arrau is - " << endl;
+//     vector<int> arr(n);
+//     cout << "Enter the Vector Elements " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+//     cout << endl;
+//     cout << "Hence the sorted arrau is - " << endl;
 
-// //     bubbleSort(arr);
-// //     for (int i = 0; i < n; i++)
-// //     {
-// //         cout << arr[i] << " ";
-// //     }
+//     bubbleSort(arr);
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
 
-// // }
+// }
 
 // ____________ ____________
 
@@ -256,51 +256,54 @@ So, the sorted array using Insertion Sort is -
 
 // Qun 3 - Insertion Sort Implementation -
 
-void insertionSort(vector<int> &arr)
-{
-    int n = arr.size();
-    for (int i = 1; i < n; i++)
-    {
-        int el = arr[i];
-        int j = i - 1;
-        while (j >= 0 && arr[j] > el)
-        {
-            // Shift
-            arr[j + 1] = arr[j];
-            j--;
-        }
-        // Correct possition of element - 
-        arr[j+1]=el;
-    }
-}
+// void insertionSort(vector<int> &arr)
+// {
+//     int n = arr.size();
+//     for (int i = 1; i < n; i++)
+//     {
+//         int el = arr[i];
+//         int j = i - 1;
+//         while (j >= 0 && arr[j] > el)
+//         {
+//             // Shift
+//             arr[j + 1] = arr[j];
+//             j--;
+//         }
+//         // Correct possition of element - 
+//         arr[j+1]=el;
+//     }
+// }
 
-int main()
-{
-    int n;
-    cout << "Mention the Vector size" << endl;
-    cin >> n;
+// int main()
+// {
+//     int n;
+//     cout << "Mention the Vector size" << endl;
+//     cin >> n;
 
-    vector<int> arr(n);
-    cout << "Enter the vector elements " << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+//     vector<int> arr(n);
+//     cout << "Enter the vector elements " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
 
-    insertionSort(arr);
-    cout << "So, the sorted array after applying insertion sort is -" << endl;
-    for (int i : arr)
-    {
-        cout << i << " ";
-    }
+//     insertionSort(arr);
+//     cout << "So, the sorted array after applying insertion sort is -" << endl;
+//     for (int i : arr)
+//     {
+//         cout << i << " ";
+//     }
 
-/*
-Mention the Vector size
-6
-Enter the vector elements 
-99 2 11 2222 64 1726
-So, the sorted array after applying insertion sort is -
-2 11 64 99 1726 2222 
-PS D:\Placed,Congratul
-*/
-}
+// /*
+// Mention the Vector size
+// 6
+// Enter the vector elements 
+// 99 2 11 2222 64 1726
+// So, the sorted array after applying insertion sort is -
+// 2 11 64 99 1726 2222 
+// PS D:\Placed,Congratul
+// */
+
+// // ____________ ____________ ____________ ____________ ____________
+
+// }
