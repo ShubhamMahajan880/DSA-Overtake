@@ -160,43 +160,43 @@ backtracking - In one case we select something but in the another case we re not
 // ____________ ____________
 
 // Qun - print all subsrtings of a givcen string -
-void subsequence(int i, string &s, string &ans)
-{
-    if (i >= s.size())
-    {
-        cout << ans << endl;
-        return;
-    }
+    // void subsequence(int i, string &s, string &ans)
+    // {
+    //     if (i >= s.size())
+    //     {
+    //         cout << ans << endl;
+    //         return;
+    //     }
 
-    // Include current character
-    ans.push_back(s[i]);
-    subsequence(i + 1, s, ans);
+    //     // Include current character
+    //     ans.push_back(s[i]);
+    //     subsequence(i + 1, s, ans);
 
-    // Exclude current character
-    ans.pop_back();
-    subsequence(i + 1, s, ans);
-}
+    //     // Exclude current character
+    //     ans.pop_back();
+    //     subsequence(i + 1, s, ans);
+    // }
 
-int main()
-{
-    string s;
-    cout << "What is your statement - " << endl;
-    getline(cin, s);  // Use getline to accept full statement
+    // int main()
+    // {
+    //     string s;
+    //     cout << "What is your statement - " << endl;
+    //     getline(cin, s);  // Use getline to accept full statement
 
-    string ans = "";
-    subsequence(0, s, ans);
+    //     string ans = "";
+    //     subsequence(0, s, ans);
 
-    return 0;
-/*
-What is your statement - 
-abc
-abc
-ab
-ac
-a
-bc
-b
-c
+    //     return 0;
+    // /*
+    // What is your statement - 
+    // abc
+    // abc
+    // ab
+    // ac
+    // a
+    // bc
+    // b
+    // c
 
-*/    
-}
+    // */    
+// }
