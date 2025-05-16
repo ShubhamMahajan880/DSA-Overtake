@@ -188,13 +188,13 @@ using namespace std;
 //         cout << i << " ";
 //     }
 //     /*
-//     Vector Size
-//     6
-//     Mention the elements
-//     99 2 11 2222 64 1726
-//     So, the sorted array using Insertion Sort is -
-//     2 11 64 99 1726 2222
-//     */
+// Vector Size
+// 6
+// Mention the elements
+// 99 2 11 2222 64 1726
+// So, the sorted array using Insertion Sort is -
+// 2 11 64 99 1726 2222
+// */
 // }
 // ____________ ____________
 
@@ -269,7 +269,7 @@ So, the sorted array using Insertion Sort is -
 //             arr[j + 1] = arr[j];
 //             j--;
 //         }
-//         // Correct possition of element - 
+//         // Correct possition of element -
 //         arr[j+1]=el;
 //     }
 // }
@@ -297,13 +297,92 @@ So, the sorted array using Insertion Sort is -
 // /*
 // Mention the Vector size
 // 6
-// Enter the vector elements 
+// Enter the vector elements
 // 99 2 11 2222 64 1726
 // So, the sorted array after applying insertion sort is -
-// 2 11 64 99 1726 2222 
+// 2 11 64 99 1726 2222
 // PS D:\Placed,Congratul
 // */
-
-// // ____________ ____________ ____________ ____________ ____________
-
 // }
+// ____________ ____________ ____________ ____________ ____________
+
+// Merge Sort  -
+/*
+In Insertion, Bubble & Selection All three sorting algo having T.C = O(n^2) in worst case & S.C - is O(1)
+But in Merge case in WC, T.C - is always O(n*logn) & SC is  - O(1)
+ */
+
+void merge(vector<int> &arr, int start, int mid, int end)
+{
+    int n1 = mid - start + 1, n2 = end - mid;
+    vector<int> a(n1), b(n2);
+    int j = 0;
+
+    for (int i = start; i <= mid; i++)
+    {
+        a[j++] = arr[i];
+    }
+    j = 0;
+    for (int i = mid + 1; i <= end; i++)
+    {
+        b[j++] = arr[i];
+    }
+    int p1 = 0, p2 = 0;
+    int originalPointer = start;
+
+    while (p1 < n1 && p2 < n2)
+    {
+        if (a[p1] < b[p2])
+        {
+            arr[originalPointer++] = a[p1++];
+        }
+        else
+        {
+            arr[originalPointer++] = b[p2++];
+        }
+    }
+}
+void mergeSort(vector<int> &arr, int start, int end)
+{
+    if (start < end)
+    {
+        int mid = (start + end) / 2;
+        mergeSort(arr, start, mid);
+        mergeSort(arr, mid + 1, end);
+        merge(arr, start, mid, end);
+    }
+}
+
+int main()
+{
+    int n;
+    cout << "Mention the sixe of Vector - " << endl;
+    cin >> n;
+
+    vector<int> arr(n);
+    cout << "Enter the elements of vector - " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    mergeSort(arr, 0, n - 1);
+    cout << "So, the array after sorting  is -" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+/* 
+ention the sixe of Vector - 
+6
+Enter the elements of vector - 
+30 2 15 44 6 8
+So, the array after sorting  is -
+2 2 6 6 8 8 
+ */    
+
+ // ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________
+
+}
