@@ -1,47 +1,60 @@
 #include <bits/stdc++.h>
-#include <iostream>
 using namespace std;
 
-void insertSort(vector<int> &arr)
-{
-    int n = arr.size();
-    // insertion sort
+// Function to merge two sorted halves of the array
+void merge(vector<int> &arr, int st, int mid, int end) {
+    vector<int> temp;
+    int i = st, j = mid + 1;
 
-    for (int i = 0; i < n; i++)
-    {
-        int max = INT_MIN;
-        int maxindx = -1;
-        // Max value
-        for (int j = i; j < n; j++)
-        {
-            if (arr[j] > max)
-            {
-                max = arr[j];
-                maxindx = j;
-            }
+    // Merge the two sorted halves
+    while (i <= mid && j <= end) {
+        if (arr[i] <= arr[j]) {
+            temp.push_back(arr[i]);
+            i++;
+        } else {
+            temp.push_back(arr[j]);
+            j++;
         }
-        // Swapping maximum element from unsorted starting index
-        swap(arr[i], arr[maxindx]); // pure me se max dhundh k use first waaali value se swap kr do
+    }
+
+    // Add remaining elements from the left half
+    while (i <= mid) {
+        temp.push_back(arr[i]);
+        i++;
+    }
+
+    // Add remaining elements from the right half
+    while (j <= end) {
+        temp.push_back(arr[j]);
+        j++;
+    }
+
+    // Copy back the sorted elements into original array
+    for (int idx = 0; idx < temp.size(); idx++) {
+        arr[st + idx] = temp[idx];
     }
 }
 
-int main()
-{
-    int n;
-    cout << "Vector Size" << endl;
-    cin >> n;
-
-    vector<int> arr(n);
-
-    cout << "Mention the elements" << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
+// Merge sort function
+void mergeSort(vector<int> &arr, int st, int end) {
+    if (st < end) {
+        int mid = st + (end - st) / 2;
+        mergeSort(arr, st, mid);       // Left half
+        mergeSort(arr, mid + 1, end);  // Right half
+        merge(arr, st, mid, end);      // Merge both halves
     }
-    insertSort(arr);
-    cout << "So, the sorted array using Insertion Sort is - " << endl;
-    for (int i : arr)
-    {
-        cout << i << " ";
+}
+
+int main() {
+    vector<int> arr = {12, 31, 35, 8, 32, 17};
+
+    mergeSort(arr, 0, arr.size() - 1);
+
+    cout << "Sorted array: ";
+    for (int val : arr) {
+        cout << val << " ";
     }
+    cout << endl;
+
+    return 0;
 }

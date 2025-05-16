@@ -294,7 +294,7 @@ So, the sorted array using Insertion Sort is -
 //         cout << i << " ";
 //     }
 
-// /*
+/*
 // Mention the Vector size
 // 6
 // Enter the vector elements
@@ -304,6 +304,98 @@ So, the sorted array using Insertion Sort is -
 // PS D:\Placed,Congratul
 // */
 // }
+
+// ____________ ____________
+
+// W/O using functionns  -
+// int main()
+// {
+//     int n;
+//     cout << "Mention the Vector size" << endl;
+//     cin >> n;
+
+//     vector<int> arr(n);
+//     cout << "Enter the vector elements " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     for (int i = 1; i < n; i++)
+//     {
+//         int el = arr[i];
+//         int j = i - 1;
+//         while (j >= 0 && arr[j] > el)
+//         {
+//             // Shift
+//             arr[j + 1] = arr[j];
+//             j--;
+//         }
+//         // Correct possition of element -
+//         arr[j+1]=el;
+//     }
+
+//     cout << "So, the sorted array after applying insertion sort is -" << endl;
+//     for (int i : arr)
+//     {
+//         cout << i << " ";
+//     }
+
+/*
+Mention the Vector size
+6
+Enter the vector elements
+15 45 10 5 89 99
+So, the sorted array after applying insertion sort is -
+5 10 15 45 89 99
+*/
+
+// ____________ ____________
+
+// For decreasing ordeer of array -
+
+// int main()
+// {
+//     int n;
+//     cout << "Mention the Vector size" << endl;
+//     cin >> n;
+
+//     vector<int> arr(n);
+//     cout << "Enter the vector elements " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     for (int i = 1; i < n; i++)
+//     {
+//         int el = arr[i];
+//         int j = i - 1;
+//         while (j >= 0 && arr[j] < el)
+//         {
+//             // Shift
+//             arr[j + 1] = arr[j];
+//             j--;
+//         }
+//         // Correct possition of element -
+//         arr[j+1]=el;
+//     }
+
+//     cout << "So, the sorted array after applying insertion sort is -" << endl;
+//     for (int i : arr)
+//     {
+//         cout << i << " ";
+//     }
+
+/*
+Mention the Vector size
+6
+Enter the vector elements
+15 45 10 5 89 99
+So, the sorted array after applying insertion sort is -
+99 89 45 15 10 5
+*/
+
 // ____________ ____________ ____________ ____________ ____________
 
 // Merge Sort  -
@@ -312,77 +404,140 @@ In Insertion, Bubble & Selection All three sorting algo having T.C = O(n^2) in w
 But in Merge case in WC, T.C - is always O(n*logn) & SC is  - O(1)
  */
 
-void merge(vector<int> &arr, int start, int mid, int end)
-{
-    int n1 = mid - start + 1, n2 = end - mid;
-    vector<int> a(n1), b(n2);
-    int j = 0;
+// void merge(vector<int> &arr, int start, int mid, int end)
+// {
+//     int n1 = mid - start + 1, n2 = end - mid;
+//     vector<int> a(n1), b(n2);
+//     int j = 0;
 
-    for (int i = start; i <= mid; i++)
-    {
-        a[j++] = arr[i];
-    }
-    j = 0;
-    for (int i = mid + 1; i <= end; i++)
-    {
-        b[j++] = arr[i];
-    }
-    int p1 = 0, p2 = 0;
-    int originalPointer = start;
+//     for (int i = start; i <= mid; i++)
+//     {
+//         a[j++] = arr[i];
+//     }
+//     j = 0;
+//     for (int i = mid + 1; i <= end; i++)
+//     {
+//         b[j++] = arr[i];
+//     }
+//     int p1 = 0, p2 = 0;
+//     int originalPointer = start;
 
-    while (p1 < n1 && p2 < n2)
-    {
-        if (a[p1] < b[p2])
-        {
-            arr[originalPointer++] = a[p1++];
+//     while (p1 < n1 && p2 < n2)
+//     {
+//         if (a[p1] < b[p2])
+//         {
+//             arr[originalPointer++] = a[p1++];
+//         }
+//         else
+//         {
+//             arr[originalPointer++] = b[p2++];
+//         }
+//     }
+// }
+// void mergeSort(vector<int> &arr, int start, int end)
+// {
+//     if (start < end)
+//     {
+//         int mid = (start + end) / 2;
+//         mergeSort(arr, start, mid);
+//         mergeSort(arr, mid + 1, end);
+//         merge(arr, start, mid, end);
+//     }
+// }
+
+// int main()
+// {
+//     int n;
+//     cout << "Mention the sixe of Vector - " << endl;
+//     cin >> n;
+
+//     vector<int> arr(n);
+//     cout << "Enter the elements of vector - " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     mergeSort(arr, 0, n - 1);
+//     cout << "So, the array after sorting  is -" << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+
+/*
+ention the sixe of Vector -
+6
+Enter the elements of vector -
+30 2 15 44 6 8
+So, the array after sorting  is -
+2 2 6 6 8 8
+ */
+
+ // ____________ ____________ 
+
+// Merge Sort using different method - 
+    // Function to merge two sorted halves of the array
+void merge(vector<int> &arr, int st, int mid, int end) {
+    vector<int> temp;
+    int i = st, j = mid + 1;
+
+    // Merge the two sorted halves
+    while (i <= mid && j <= end) {
+        if (arr[i] <= arr[j]) {
+            temp.push_back(arr[i]);
+            i++;
+        } else {
+            temp.push_back(arr[j]);
+            j++;
         }
-        else
-        {
-            arr[originalPointer++] = b[p2++];
-        }
+    }
+
+    // Add remaining elements from the left half
+    while (i <= mid) {
+        temp.push_back(arr[i]);
+        i++;
+    }
+
+    // Add remaining elements from the right half
+    while (j <= end) {
+        temp.push_back(arr[j]);
+        j++;
+    }
+
+    // Copy back the sorted elements into original array
+    for (int idx = 0; idx < temp.size(); idx++) {
+        arr[st + idx] = temp[idx];
     }
 }
-void mergeSort(vector<int> &arr, int start, int end)
-{
-    if (start < end)
-    {
-        int mid = (start + end) / 2;
-        mergeSort(arr, start, mid);
-        mergeSort(arr, mid + 1, end);
-        merge(arr, start, mid, end);
+
+// Merge sort function
+void mergeSort(vector<int> &arr, int st, int end) {
+    if (st < end) {
+        int mid = st + (end - st) / 2;
+        mergeSort(arr, st, mid);       // Left half
+        mergeSort(arr, mid + 1, end);  // Right half
+        merge(arr, st, mid, end);      // Merge both halves
     }
 }
 
-int main()
-{
-    int n;
-    cout << "Mention the sixe of Vector - " << endl;
-    cin >> n;
+int main() {
+    vector<int> arr = {12, 31, 35, 8, 32, 17};
 
-    vector<int> arr(n);
-    cout << "Enter the elements of vector - " << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+    mergeSort(arr, 0, arr.size() - 1);
 
-    mergeSort(arr, 0, n - 1);
-    cout << "So, the array after sorting  is -" << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
+    cout << "Sorted array: ";
+    for (int val : arr) {
+        cout << val << " ";
     }
     cout << endl;
 
-/* 
-ention the sixe of Vector - 
-6
-Enter the elements of vector - 
-30 2 15 44 6 8
-So, the array after sorting  is -
-2 2 6 6 8 8 
- */    
-
- // ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________
-
+    return 0;
+// Sorted array: 8 12 17 31 32 35 
 }
+
+// ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________
+// }
+
+
