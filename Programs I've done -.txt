@@ -76,4 +76,8 @@ Sorting Algorithm's -
 2 - Selection Sort Implementation
 3 - Insertion Sort Implementation 
 
+Array,Subarray, Subsequence, String & Substring Operations  
+1 - Print Maximum sum of SubArray. Coondition - Sub-array must not be empty –
+2 - Print all subsequences of an Array or String
+
 
