@@ -1,5 +1,6 @@
 Programs I've done - 
 
+Basic Fundamental
 1 - Reverse a Number 
 2 - Palindrome Number
 3 - sum of digits
@@ -75,9 +76,18 @@ Sorting Algorithm's -
 1 - Bubble Sort Implementation - increasing & Decreasing Order
 2 - Selection Sort Implementation
 3 - Insertion Sort Implementation 
+4 - Merge Sort Implementation
 
-Array,Subarray, Subsequence, String & Substring Operations  
-1 - Print Maximum sum of SubArray. Coondition - Sub-array must not be empty –
+Kadane’s Algorithms  - Array, Subarray, Subsequence, String & Substring Operations  
+1 - Print Maximum sum of Subarray. Condition - Sub-array must not be empty –
 2 - Print all subsequences of an Array or String
+3 - Minimum no, of jumps required to reach at the end of the array?  OR Can we reach at the end of the array
+4 - Stack: Valid Paranethesis Problem  -
+
+Pointers 
+basic Introduction and Declarations
+
+
+
 
 

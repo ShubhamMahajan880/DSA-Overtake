@@ -398,7 +398,7 @@ So, the sorted array after applying insertion sort is -
 
 // ____________ ____________ ____________ ____________ ____________
 
-// Merge Sort  -
+//Qun 4 - Merge Sort Implementation
 /*
 In Insertion, Bubble & Selection All three sorting algo having T.C = O(n^2) in worst case & S.C - is O(1)
 But in Merge case in WC, T.C - is always O(n*logn) & SC is  - O(1)
@@ -478,64 +478,65 @@ So, the array after sorting  is -
  // ____________ ____________ 
 
 // Merge Sort using different method - 
-    // Function to merge two sorted halves of the array
-void merge(vector<int> &arr, int st, int mid, int end) {
-    vector<int> temp;
-    int i = st, j = mid + 1;
+// Function to merge two sorted halves of the array
 
-    // Merge the two sorted halves
-    while (i <= mid && j <= end) {
-        if (arr[i] <= arr[j]) {
-            temp.push_back(arr[i]);
-            i++;
-        } else {
-            temp.push_back(arr[j]);
-            j++;
-        }
-    }
+// void merge(vector<int> &arr, int st, int mid, int end) {
+//     vector<int> temp;
+//     int i = st, j = mid + 1;
 
-    // Add remaining elements from the left half
-    while (i <= mid) {
-        temp.push_back(arr[i]);
-        i++;
-    }
+//     // Merge the two sorted halves
+//     while (i <= mid && j <= end) {
+//         if (arr[i] <= arr[j]) {
+//             temp.push_back(arr[i]);
+//             i++;
+//         } else {
+//             temp.push_back(arr[j]);
+//             j++;
+//         }
+//     }
 
-    // Add remaining elements from the right half
-    while (j <= end) {
-        temp.push_back(arr[j]);
-        j++;
-    }
+//     // Add remaining elements from the left half
+//     while (i <= mid) {
+//         temp.push_back(arr[i]);
+//         i++;
+//     }
 
-    // Copy back the sorted elements into original array
-    for (int idx = 0; idx < temp.size(); idx++) {
-        arr[st + idx] = temp[idx];
-    }
-}
+//     // Add remaining elements from the right half
+//     while (j <= end) {
+//         temp.push_back(arr[j]);
+//         j++;
+//     }
 
-// Merge sort function
-void mergeSort(vector<int> &arr, int st, int end) {
-    if (st < end) {
-        int mid = st + (end - st) / 2;
-        mergeSort(arr, st, mid);       // Left half
-        mergeSort(arr, mid + 1, end);  // Right half
-        merge(arr, st, mid, end);      // Merge both halves
-    }
-}
+//     // Copy back the sorted elements into original array
+//     for (int idx = 0; idx < temp.size(); idx++) {
+//         arr[st + idx] = temp[idx];
+//     }
+// }
 
-int main() {
-    vector<int> arr = {12, 31, 35, 8, 32, 17};
+// // Merge sort function
+// void mergeSort(vector<int> &arr, int st, int end) {
+//     if (st < end) {
+//         int mid = st + (end - st) / 2;
+//         mergeSort(arr, st, mid);       // Left half
+//         mergeSort(arr, mid + 1, end);  // Right half
+//         merge(arr, st, mid, end);      // Merge both halves
+//     }
+// }
 
-    mergeSort(arr, 0, arr.size() - 1);
+// int main() {
+//     vector<int> arr = {12, 31, 35, 8, 32, 17};
 
-    cout << "Sorted array: ";
-    for (int val : arr) {
-        cout << val << " ";
-    }
-    cout << endl;
+//     mergeSort(arr, 0, arr.size() - 1);
 
-    return 0;
-// Sorted array: 8 12 17 31 32 35 
-}
+//     cout << "Sorted array: ";
+//     for (int val : arr) {
+//         cout << val << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// // Sorted array: 8 12 17 31 32 35 
+// }
 
 // ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________
 // }

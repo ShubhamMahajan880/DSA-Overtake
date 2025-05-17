@@ -8,10 +8,10 @@
 // #include<set>
 using namespace std;
 
+// Qun 1 - Print Maximum sum of SubArray. Coondition - Sub-array must not be empty -
 // int main()
 // {
 
-// Qun 1 - Print Maximum sum of SubArray. Coondition - Sub-array must not be empty -
 //  int n;
 //  cout << "size of array - " << endl;
 //  cin >> n;
@@ -205,53 +205,120 @@ backtracking - In one case we select something but in the another case we re not
 
 // Qun 3 - Minimum no, of jumps required to reach at the end of the array?  OR Can we reach at the end of the array
 
-int main()
-{
-    int n;
-    cout << "Menttion the size of array - " << endl;
-    cin >> n;
+// int main()
+// {
+//     int n;
+//     cout << "Menttion the size of array - " << endl;
+//     cin >> n;
 
-    int arr[n];
-    cout << "what are the elements of array - " << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+//     int arr[n];
+//     cout << "what are the elements of array - " << endl;
+//     for (int i = 0; i < n; i++)
+//     {
+//         cin >> arr[i];
+//     }
 
-    int curr = 0, can_reach = 0;
-    int jumps = 0;
-    while (can_reach < n - 1)
-    {
-        int mx = 0;
-        for (int i = curr; i <= can_reach; i++)
-        {
-            mx = max(mx, i + arr[i]);
-        }
-        jumps++;
-        curr = can_reach + 1;
-        can_reach = mx;
-        if (can_reach < curr)
-        {
-            cout << "No" << endl;
-            return 0;
-        }
-    }
-    cout<<"YES"<<endl;
-    cout << jumps << endl;
+//     int curr = 0, can_reach = 0;
+//     int jumps = 0;
+//     while (can_reach < n - 1)
+//     {
+//         int mx = 0;
+//         for (int i = curr; i <= can_reach; i++)
+//         {
+//             mx = max(mx, i + arr[i]);
+//         }
+//         jumps++;
+//         curr = can_reach + 1;
+//         can_reach = mx;
+//         if (can_reach < curr)
+//         {
+//             cout << "No" << endl;
+//             return 0;
+//         }
+//     }
+//     cout << "YES" << endl;
+//     cout << jumps << endl;
+//     /*
+//     Menttion the size of array -
+//     5
+//     what are the elements of array -
+//     3 2 1 0 4
+//     NO
+
+//     Menttion the size of array -
+//     5
+//     what are the elements of array -
+//     2 3 1 1 4
+//     2
+//     */
+//     // T.C - 2 times travelling for 2 variables so O(2*n) = O(n) & S.C = O(1)
+// }
+// ____________ ____________ ____________ ____________ ____________ ____________ 
+
+//Qun 4 - Stack: Valid Paranethesis Problem  -
+
+// bool isValid(string s)
+// {
+//     stack<char> st;
+//     for (int i = 0; i < s.size(); i++)
+//     {
+//         // oOpening Brackets
+//         if (s[i] == '(' || s[i] == '[' || s[i] == '{')
+//         {
+//             st.push(s[i]);
+//         }
+//         // Closing - yaha order m,atter kr rha he jo bracket lastr me open huah h vo phle close bhi to hona hi chahiye menas Last Open First Close , so using simple stack aspproaches
+//         else
+//         {
+//             if (st.empty())
+//                 return false;
+//             if (s[i] == ')')
+//             {
+//                 if (st.top() != '(')
+//                     return false;
+//             }
+//             else if (s[i] == ']')
+//             {
+//                 if (st.top() != '[')
+//                     return false;
+//             }
+//             else
+//             {
+//                 if (st.top() != '{')
+//                     return false;
+//             }
+//             st.pop();
+//         }
+//     }
+//     if (st.size() != 0)
+//         return false;
+//     return true;
+// }
+
+// int main()
+// {
+//     string s;
+//     cout << "Mention the string - " << endl;
+//     cin >> s;
+//     cout << isValid(s) << endl;
+// }
+
 /*
-Menttion the size of array -
-5
-what are the elements of array -
-3 2 1 0 4
-NO
+Mention the string -
+([{}])
+1
 
-Menttion the size of array - 
-5 
-what are the elements of array - 
-2 3 1 1 4
-2
+Mention the string -
+[{()}](
+0
+
+Mention the string -
+(){}[]()
+1
+
+T.C - O(n) as n size of string
+S.C. - O(n) as n size of string
 */
-// T.C - 2 times travelling for 2 variables so O(2*n) = O(n) & S.C = O(1)
 
-// ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________
-}
+// ____________ ____________ ____________ ____________ ____________
+
