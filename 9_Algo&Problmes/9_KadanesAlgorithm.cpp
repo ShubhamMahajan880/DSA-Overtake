@@ -11,10 +11,10 @@ using namespace std;
 // int main()
 // {
 
-// Qun - Print Maximum sum of SubArray. Coondition - Sub-array must not be empty -
-// int n;
-// cout << "size of array - " << endl;
-// cin >> n;
+// Qun 1 - Print Maximum sum of SubArray. Coondition - Sub-array must not be empty -
+//  int n;
+//  cout << "size of array - " << endl;
+//  cin >> n;
 
 // vector<int> arr(n);
 // cout << "Give elements of array  - " << endl;
@@ -93,7 +93,7 @@ S.C - O(1) - constant because of only 2 variable declared
 // }
 // ____________ ____________ ____________ ____________ ____________
 
-//  Qun - Print all subsequences of an Array or String
+// Qun 2 - Print all subsequences of an Array or String
 
 /*  Subsequence  - ALl the array eleemnts possible with the same order as well as it can be contigeous
 Ex - [1,2,3] - {Empty}, {1},{1 2},{1 3},{1 2 3},{2},{ 2 3},{3}
@@ -160,43 +160,98 @@ backtracking - In one case we select something but in the another case we re not
 // ____________ ____________
 
 // Qun - print all subsrtings of a givcen string -
-    // void subsequence(int i, string &s, string &ans)
-    // {
-    //     if (i >= s.size())
-    //     {
-    //         cout << ans << endl;
-    //         return;
-    //     }
+// void subsequence(int i, string &s, string &ans)
+// {
+//     if (i >= s.size())
+//     {
+//         cout << ans << endl;
+//         return;
+//     }
 
-    //     // Include current character
-    //     ans.push_back(s[i]);
-    //     subsequence(i + 1, s, ans);
+//     // Include current character
+//     ans.push_back(s[i]);
+//     subsequence(i + 1, s, ans);
 
-    //     // Exclude current character
-    //     ans.pop_back();
-    //     subsequence(i + 1, s, ans);
-    // }
-
-    // int main()
-    // {
-    //     string s;
-    //     cout << "What is your statement - " << endl;
-    //     getline(cin, s);  // Use getline to accept full statement
-
-    //     string ans = "";
-    //     subsequence(0, s, ans);
-
-    //     return 0;
-    // /*
-    // What is your statement - 
-    // abc
-    // abc
-    // ab
-    // ac
-    // a
-    // bc
-    // b
-    // c
-
-    // */    
+//     // Exclude current character
+//     ans.pop_back();
+//     subsequence(i + 1, s, ans);
 // }
+
+// int main()
+// {
+//     string s;
+//     cout << "What is your statement - " << endl;
+//     getline(cin, s);  // Use getline to accept full statement
+
+//     string ans = "";
+//     subsequence(0, s, ans);
+
+//     return 0;
+// /*
+// What is your statement -
+// abc
+// abc
+// ab
+// ac
+// a
+// bc
+// b
+// c
+
+// */
+// }
+
+// ____________ ____________ ____________ ____________ ____________
+
+// Qun 3 - Minimum no, of jumps required to reach at the end of the array?  OR Can we reach at the end of the array
+
+int main()
+{
+    int n;
+    cout << "Menttion the size of array - " << endl;
+    cin >> n;
+
+    int arr[n];
+    cout << "what are the elements of array - " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+    int curr = 0, can_reach = 0;
+    int jumps = 0;
+    while (can_reach < n - 1)
+    {
+        int mx = 0;
+        for (int i = curr; i <= can_reach; i++)
+        {
+            mx = max(mx, i + arr[i]);
+        }
+        jumps++;
+        curr = can_reach + 1;
+        can_reach = mx;
+        if (can_reach < curr)
+        {
+            cout << "No" << endl;
+            return 0;
+        }
+    }
+    cout<<"YES"<<endl;
+    cout << jumps << endl;
+/*
+Menttion the size of array -
+5
+what are the elements of array -
+3 2 1 0 4
+NO
+
+Menttion the size of array - 
+5 
+what are the elements of array - 
+2 3 1 1 4
+2
+*/
+// T.C - 2 times travelling for 2 variables so O(2*n) = O(n) & S.C = O(1)
+
+// ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________ ____________
+}
