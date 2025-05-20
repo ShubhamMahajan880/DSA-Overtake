@@ -155,5 +155,10 @@ int main()
 
         count++;
     }
+    while (condition)
+    {
+        /* code */
+    }
+    
     
 }
