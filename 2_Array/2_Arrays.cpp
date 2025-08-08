@@ -1,120 +1,120 @@
-#include <bits/stdc++.h>
-// #include <iostream>
-// #include<algorithm>
-// #include<climits>
-using namespace std;
-int main()
-{
-    // Array in CPP -
-    // Array declaration and array syntax -
-    // DATATYPE ARRAY_NAME [Size]
+    #include <bits/stdc++.h>
+    // #include <iostream>
+    // #include<algorithm>
+    // #include<climits>
+    using namespace std;
+    int main()
+    {
+        // Array in CPP -
+        // Array declaration and array syntax -
+        // DATATYPE ARRAY_NAME [Size]
 
-    // int arr[5];
-    // // initialization of an array -
-    // int arrr[6] = {6, 5, 4, 3, 2, 1};
+        // int arr[5];
+        // // initialization of an array -
+        // int arrr[6] = {6, 5, 4, 3, 2, 1};
 
-    // array printing
-    /*
-    cout<<arrr[0]<<endl;//6
-    cout<<arrr[1]<<endl;//5
-    cout<<arrr[2]<<endl;//4
-    cout<<arrr[3]<<endl;//3
-    cout<<arrr[4]<<endl;//2
-    cout<<arrr[5]<<endl;//1
-    cout<<arrr[6]<<endl;//6422280 - error as memory not specified so any bvalue produces toa avpid error
-    */
+        // array printing
+        /*
+        cout<<arrr[0]<<endl;//6
+        cout<<arrr[1]<<endl;//5
+        cout<<arrr[2]<<endl;//4
+        cout<<arrr[3]<<endl;//3
+        cout<<arrr[4]<<endl;//2
+        cout<<arrr[5]<<endl;//1
+        cout<<arrr[6]<<endl;//6422280 - error as memory not specified so any bvalue produces toa avpid error
+        */
 
-    // for (int i = 0; i <= 5; i++)
-    // {
-    //     cout << arrr[i] << endl;
-    // }
+        // for (int i = 0; i <= 5; i++)
+        // {
+        //     cout << arrr[i] << endl;
+        // }
 
-    // ____________ ____________
+        // ____________ ____________
 
-    // Taking input for array size
+        // Taking input for array size
 
-    // int size; cout<<"mrntion the size of arry you want to take for elements"<<endl; cin>>size;
-    // int arey[size];
-    // cout<<"Now enter the array values one by one"<<endl;
+        // int size; cout<<"mrntion the size of arry you want to take for elements"<<endl; cin>>size;
+        // int arey[size];
+        // cout<<"Now enter the array values one by one"<<endl;
 
-    // for (int j = 0; j < size; j++)
-    // {
-    //     cin>>arey[j];
-    // }
-    // cout<<"You entered array values as following - "<<endl;
+        // for (int j = 0; j < size; j++)
+        // {
+        //     cin>>arey[j];
+        // }
+        // cout<<"You entered array values as following - "<<endl;
 
-    // for (int j = 0; j < size; j++)
-    // {
-    //     cout<<arey[j]<<endl;
-    // }
+        // for (int j = 0; j < size; j++)
+        // {
+        //     cout<<arey[j]<<endl;
+        // }
 
-    // ____________ ____________
+        // ____________ ____________
 
-    // sun of array's elements
+        // sun of array's elements
 
-    // int sum=0;
-    // int aruy[5] = {10,20,30,40,50};
-    // for (int k = 0; k < 5; k++)
-    // {
-    //     sum=sum+aruy[k];
-    // }
-    // cout<<sum<<endl;
+        // int sum=0;
+        // int aruy[5] = {10,20,30,40,50};
+        // for (int k = 0; k < 5; k++)
+        // {
+        //     sum=sum+aruy[k];
+        // }
+        // cout<<sum<<endl;
 
-    // ____________ ____________
+        // ____________ ____________
 
-    // Mltiplication of all elenewntds of an array
+        // Mltiplication of all elenewntds of an array
 
-    // int product=1;
-    // int aruyy[5] = {10,20,30,40,50};
-    // for (int k = 0; k < 5; k++)
-    // {
-    //     product=product*aruyy[k];
-    // }
-    // cout<<"So the multiplication result is - "<<product<<endl;
+        // int product=1;
+        // int aruyy[5] = {10,20,30,40,50};
+        // for (int k = 0; k < 5; k++)
+        // {
+        //     product=product*aruyy[k];
+        // }
+        // cout<<"So the multiplication result is - "<<product<<endl;
 
-    // ____________ ____________
+        // ____________ ____________
 
-    // Avg of an array
+        // Avg of an array
 
-    // int avg=0,summ=0;
-    // int aruyyy[5] = {10,20,30,40,50};
-    // for (int k = 0; k < 5; k++)
-    // {
-    //     summ=summ+aruyyy[k];
-    //     avg = sum/5;
-    // }
-    // cout<<"So the sum  is - " <<summ<<" and the avg is - "<<avg<<endl;
+        // int avg=0,summ=0;
+        // int aruyyy[5] = {10,20,30,40,50};
+        // for (int k = 0; k < 5; k++)
+        // {
+        //     summ=summ+aruyyy[k];
+        //     avg = sum/5;
+        // }
+        // cout<<"So the sum  is - " <<summ<<" and the avg is - "<<avg<<endl;
 
-    // ____________ ____________
+        // ____________ ____________
 
-    // Now usign this sum/Ml/Avg printing approach by taking input from the user manualy
+        // Now usign this sum/Ml/Avg printing approach by taking input from the user manualy
 
-    // int size;
-    // cout<<"Enter the size of array you wwant"<<endl;
-    // cin>>size;
+        // int size;
+        // cout<<"Enter the size of array you wwant"<<endl;
+        // cin>>size;
 
-    // int arrey[size];
-    // cout<<"It's  time to enter the values of your array dude"<<endl;
-    // for (int i = 0; i < size; i++)
-    // {
-    //     cin>>arrey[i];
-    // }
-    // cout<<"So the insereted eleemnts are - "<<endl;
-    // for (int j = 0; j < size; j++)
-    // {
-    //     cout<<arrey[j]<<endl;
-    // }
-    // int totalsum=0, mul=1,avgg=0;
-    // for (int k = 0; k < size; k++)
-    // {
-    //     totalsum = totalsum+arrey[k];
-    //     mul=mul*arrey[k];
-    //     avgg = float(totalsum/size);
-    // }
-    // cout<<" The sum of inserted elements is "<<totalsum<<endl;
-    // cout<<" So the multiplication result is - "<<mul<<endl;
-    // cout<<" and the most epic avg of elements is "<<avgg<<endl;
-    // ____________ ____________ ____________ ____________ ____________
+        // int arrey[size];
+        // cout<<"It's  time to enter the values of your array dude"<<endl;
+        // for (int i = 0; i < size; i++)
+        // {
+        //     cin>>arrey[i];
+        // }
+        // cout<<"So the insereted eleemnts are - "<<endl;
+        // for (int j = 0; j < size; j++)
+        // {
+        //     cout<<arrey[j]<<endl;
+        // }
+        // int totalsum=0, mul=1,avgg=0;
+        // for (int k = 0; k < size; k++)
+        // {
+        //     totalsum = totalsum+arrey[k];
+        //     mul=mul*arrey[k];
+        //     avgg = float(totalsum/size);
+        // }
+        // cout<<" The sum of inserted elements is "<<totalsum<<endl;
+        // cout<<" So the multiplication result is - "<<mul<<endl;
+        // cout<<" and the most epic avg of elements is "<<avgg<<endl;
+        // ____________ ____________ ____________ ____________ ____________
 
     // Array Basic QUnstions -
     // 1) - max. Element from Arrray
