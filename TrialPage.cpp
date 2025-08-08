@@ -1,45 +1,39 @@
 #include <bits/stdc++.h>
+// #include <iostream>
+// #include<algorithm>
+// #include<climits>
+// #include<string>
+// #include<cctype>
+// #include<vector>
+// #include<set>
+// #include<iomanip>
+// #include<cmath>
+// #include<list>
+// #include<iterator>
 using namespace std;
 
-bool checkparenthesis(string s)
+bool isprime(int n)
 {
-    stack<char> st;
-    for (int i = 0; i < s.size(); i++)
+    if (n == 1)
     {
-        if (s[i] == '(')
-        {
-            st.push(s[i]);
-        }
-        // closing
-
-        else
-        {
-            if (st.empty())
-            {
-                return false;
-            }
-            if (s[i] == ')')
-            {
-                if (st.top() != '(')
-                {
-                    return false;
-                }
-            }
-        st.pop();
-        }
-    }
-    if (st.size() != 0)
-    {
-        false;
+        cout<<"Neiother prime nor composite number"<<endl;
     }
     
+    for (int i = 2; i * i <= n; i++)
+    {
+        if (n%i == 0)
+        {
+            cout<<"is not a prime number"<<endl;
+        }
+    }
+    cout<<"is a prime number"<<endl;
 }
 
 int main()
 {
-    string s;
-    cout << "What's your parenthesis " << endl;
-    cin >> s;
+    int n;
+    cout << "n's value - " << endl;
+    cin >> n;
 
-    cout << checkparenthesis(s)<<endl;;
+    cout<<isprime(n);
 }
