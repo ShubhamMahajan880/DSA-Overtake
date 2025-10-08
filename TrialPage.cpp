@@ -1,20 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int main()
 {
     int n;
-    cout << "Enter array size  -" << endl;
+    cout << "Enter array size - " << endl;
     cin >> n;
 
     int arr[n];
-    cout << "What are the array elements - " << endl;
-
+    cout << "What are the arraay eleemnts  -" << endl;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
-
-    cout << "Hence the enterted arratybs is" << endl;
+    cout << "So, the entered elements are - " << endl;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
@@ -22,20 +21,27 @@ int main()
     cout << endl;
 
     sort(arr, arr + n);
-    cout << "Hence the enterted arratybs is" << endl;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
     cout << endl;
 
-    cout << "Firrst max is - " << arr[0] << endl;
-    cout << "last max is - " << arr[n - 1] << endl;
-
-    int k;
-    cout << "which max/min hyou want - " << endl;
-    cin >> k;
-
-    cout << k << "min is - " << arr[k - 1] << endl;
-    cout << k << "max is - " << arr[n - k] << endl;
+    int expectedelement = arr[n / 2];
+    int count = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == expectedelement)
+        {
+            count++;
+        }
+    }
+    if (count > n / 2)
+    {
+        cout << "Majority elements exists - " << expectedelement << endl;
+    }
+    else
+    {
+        cout << "No, majority elements available as of now" << endl;
+    }
 }
