@@ -1,47 +1,63 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+void nonRepeatingCharacter(string s)
 {
-    int n;
-    cout << "Enter array size - " << endl;
-    cin >> n;
 
-    int arr[n];
-    cout << "What are the arraay eleemnts  -" << endl;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < s.size(); i++)
     {
-        cin >> arr[i];
-    }
-    cout << "So, the entered elements are - " << endl;
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-
-    sort(arr, arr + n);
-    for (int i = 0; i < n; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-
-    int expectedelement = arr[n / 2];
-    int count = 0;
-    for (int i = 0; i < n; i++)
-    {
-        if (arr[i] == expectedelement)
+        bool repeating = false;
+        for (int j = 0; j < s.size(); j++)
         {
-            count++;
+            if (j != i)
+            {
+                if (s[i] == s[j])
+                {
+                    repeating = true;
+                    break;
+                }
+            }
+        }
+        if (repeating == false)
+        {
+            cout << "First RNon Repeating String is - " << s[i] << endl;
+            return;
         }
     }
-    if (count > n / 2)
+    cout << "Not any NonReapeatingCharacter exist, all are repeating" << endl;
+}
+
+void repeatingCharacter(string s)
+{
+    for (int i = 0; i < s.size(); i++)
     {
-        cout << "Majority elements exists - " << expectedelement << endl;
+        for (int j = 0; j < s.size(); j++)
+        {
+            if (i != j)
+            {
+                if (s[i] == s[j])
+                {
+                    cout << "First Repeating Strin gsis - " << s[i] << endl;
+                    return;
+                }
+            }
+        }
     }
-    else
+}
+
+int main()
+{
+    string s1;
+    cout << "Enter string 1" << endl;
+    getline(cin, s1);
+
+    cout << "So, you entered " << endl;
+    for (int i = 0; i < s1.size(); i++)
     {
-        cout << "No, majority elements available as of now" << endl;
+        cout << s1[i];
     }
+    cout << endl;
+
+    nonRepeatingCharacter(s1);
+    repeatingCharacter(s1);
 }
