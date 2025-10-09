@@ -1,63 +1,78 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void nonRepeatingCharacter(string s)
+void transposedMatrix(int n, int m, int matrix[100][100])
 {
-
-    for (int i = 0; i < s.size(); i++)
+    for (int i = 0; i < n; i++)
     {
-        bool repeating = false;
-        for (int j = 0; j < s.size(); j++)
+        for (int j = i; j < m; j++)
         {
-            if (j != i)
-            {
-                if (s[i] == s[j])
-                {
-                    repeating = true;
-                    break;
-                }
-            }
-        }
-        if (repeating == false)
-        {
-            cout << "First RNon Repeating String is - " << s[i] << endl;
-            return;
+            swap(matrix[i][j], matrix[j][i]);
         }
     }
-    cout << "Not any NonReapeatingCharacter exist, all are repeating" << endl;
+    cout << "So, the Transposed Matrix is - " << endl;
 }
 
-void repeatingCharacter(string s)
-{
-    for (int i = 0; i < s.size(); i++)
+void MatrixRightRotationNinteeDegree(int n, int m, int matrix[100][100])
+{   
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < s.size(); j++)
+        for (int j = 0; j < m / 2; j++)
         {
-            if (i != j)
-            {
-                if (s[i] == s[j])
-                {
-                    cout << "First Repeating Strin gsis - " << s[i] << endl;
-                    return;
-                }
-            }
+            swap(matrix[i][j], matrix[i][m - j - 1]);
         }
     }
+    cout << "The 90 Degree CW Rotated Array is - " << endl;
 }
 
+void MatrixLeftRotationNinteeDegree(int n, int m, int matrix[100][100])
+{
+    for (int i = 0; i < n / 2; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            swap(matrix[i][j], matrix[n - i - 1][j]);
+        }
+    }
+
+    cout << "& 90 Degree ACW Rotated Array is - " << endl;
+}
+
+void printMatrix(int n, int m, int matrix[100][100])
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
-    string s1;
-    cout << "Enter string 1" << endl;
-    getline(cin, s1);
+    int n, m;
+    cout << "Enter the row and column" << endl;
+    cin >> n >> m;
 
-    cout << "So, you entered " << endl;
-    for (int i = 0; i < s1.size(); i++)
+    int matrix[100][100];
+    cout << "What are the matrix elements - " << endl;
+    for (int i = 0; i < n; i++)
     {
-        cout << s1[i];
+        for (int j = 0; j < m; j++)
+        {
+            cin >> matrix[i][j];
+        }
     }
-    cout << endl;
+    cout << "Entered matrix elements are - " << endl;
+    printMatrix(n, m, matrix);
 
-    nonRepeatingCharacter(s1);
-    repeatingCharacter(s1);
+    transposedMatrix(n, m, matrix);
+    printMatrix(n, m, matrix);
+
+    MatrixRightRotationNinteeDegree(n, m, matrix);
+    printMatrix(n, m, matrix);
+
+    MatrixLeftRotationNinteeDegree(n, m, matrix);
+    printMatrix(n, m, matrix);
 }
