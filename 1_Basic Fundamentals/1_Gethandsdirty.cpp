@@ -8,7 +8,7 @@ int main()
     //     cout<<20*5;//100
     //     cout<<20/5;//4
 
-    // // Data type basics
+    // // Data type basics~
     //     int variable = 50;
     //     cout<<variable;//50
     //     float variable1 = 50.50;
