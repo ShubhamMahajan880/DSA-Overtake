@@ -1,40 +1,46 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void QuickSort(int arr[], int st, int end)
+{
+    if (st >= end)
+    {
+        return;
+    }
+    int pivotIndx = Partition(arr, 0, end);
+    QuickSort(arr, st, pivotIndx - 1);
+    QuickSort(arr, pivotIndx + 1, end);
+}
+int Partition(int arr[], int st, int end)
+{
+    int i = st - 1;
+    int pivot = arr[end];
+
+    for (int j = st; j < end; j++)
+    {
+        if (arr[j] <= pivot)
+        {
+            i++;
+            swap(arr[i], arr[j]);
+        }
+    }
+    i++;
+    swap(arr[i], arr[end]);
+    return i;
+}
+void printArray(int n, int arr[])
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
 int main()
 {
-    cout << "All IMPORTANT STL FUNCTIONALITIES - " << endl;
-/*
-    | Container            | Header     |
-| -------------------- | ---------- |
-| `vector`             | `<vector>` |
-| `list` (linked list) | `<list>`   |
-| `deque`              | `<deque>`  |
-| `array`              | `<array>`  |
-| `string`             | `<string>` |
+    int n = 7;
+    int arr[n] = {56, 89, 45, 78, 12, 2, 56};
 
-| Adapter                 | Header    |
-| ----------------------- | --------- |
-| `stack`                 | `<stack>` |
-| `queue`                 | `<queue>` |
-| `priority_queue` (heap) | `<queue>` |
-
-
-| Container                              | Header            |
-| -------------------------------------- | ----------------- |
-| `set` / `multiset`                     | `<set>`           |
-| `map` / `multimap`                     | `<map>`           |
-| `unordered_set` / `unordered_multiset` | `<unordered_set>` |
-| `unordered_map` / `unordered_multimap` | `<unordered_map>` |
-
-
-| Function / Utility                                      | Header        |
-| ------------------------------------------------------- | ------------- |
-| `sort()`, `reverse()`, `lower_bound()`, `upper_bound()` | `<algorithm>` |
-| `accumulate()`, `iota()`                                | `<numeric>`   |
-| `pair`                                                  | `<utility>`   |
-| `tuple`                                                 | `<tuple>`     |
-| `bitset`                                                | `<bitset>`    |
-
-*/
+    QuickSort(arr, 0, n - 1);
+    printArray(n, arr);
 }
