@@ -67,6 +67,13 @@ This repository is a snapshot of the phase where I built habits, sharpened patte
 
 <img width="1918" height="395" alt="Day 35 (1)" src="https://github.com/user-attachments/assets/72be4c36-14cf-477a-bc0c-1feb9a7116a1" />
 
+<img width="1920" height="1080" alt="Day 35" src="https://github.com/user-attachments/assets/227a6c38-4596-4370-bd88-355c9b378fc1" />
+
+<img width="1918" height="694" alt="Day 35 (5)" src="https://github.com/user-attachments/assets/b4aaeb9a-fea5-4ec9-979e-ec22562340f1" />
+
+<img width="1919" height="768" alt="Day 35 (4)" src="https://github.com/user-attachments/assets/7996ccab-fa2c-4404-b4ed-ba4686c68714" />
+
+
 <br/><br/>
 
 ### 🌟 Target & Goals
