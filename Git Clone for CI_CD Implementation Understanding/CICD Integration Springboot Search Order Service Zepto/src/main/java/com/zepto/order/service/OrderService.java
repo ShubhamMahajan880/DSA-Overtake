@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.zepto.order.entity.OrderEntity;
-import com.zepto.order.entity.orderEntity;
+import com.zepto.order.entity.OrderEntity;
 import com.zepto.order.repository.OrderRepository;
 import com.zepto.order.response.OrderResponse;
 
